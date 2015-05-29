@@ -4,15 +4,14 @@
 Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 프로그래밍 언어입니다. 비록 기존의 언어의 아이디어를 빌려 왔지만 독창적인 속성을 통해 효과적으로 프로그래밍할 수 있습니다. 로우 레벨 시스템 언어가 가지는 효율성과 하이 레벨 언어가 가지는 특징을 가지고 있습니다. 프로그래밍 환경은 엄청난 생산성, 성능을 제공합니다. Go로 적은 코드로 많은 일을 해낼 수 있습니다.
 
 
-하드코어 Go는 3일 과정으로 구성되었으며 
-Hardcore Go is a 3 day class providing an intensive, comprehensive and idiomatic view of the Go programming language. The class explains at both a specification and implementation level, topics ranging from language syntax, OOP, concurrency, channels, testing, debugging and more. Great for anyone interested in getting a jump start on learning Go or wanting to understand more about the language and internals.
+하드코어 Go는 3일 집중 과정으로 Go 프로그래밍의 이해를 높이고 관용적인 사용법을 배우게 됩니다. 이 과정에서는 언어의 문법, OOP, 동시성(concurrency), 채널(channel), 테스팅, 디버깅등과 같이 구체적이며 구현 레벨까지를 다룹니다.  Go의 내부적은 동작을 더 잘 이해하기를 바라거나 이제 막 시작한 개발자라면 도움을 얻을 수 있을 것입니다.
 
-## Minimal Qualified Student
+## 수강 최소 자격
 
-The material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class. Students with the following minimal background will get the most out of the class.
+이 자료는 실습 환경에서 배우는 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다. 다음과 같은 배경지식이 있는 수강자에게 적합한 교육입니다.
 
-* Programming
-	* Studied CS in school or has a minimum of two years of experience programming full time professionally.
+* 프로그래밍
+	* 학교에서 컴퓨터관련 과목 수강자 혹은 IT업계에서 최소 2년 경력자
 	* Familiar with structural and object oriented programming styles.
 	* Has worked with arrays, lists, queues and stacks.
 	* Understands processes, threads and synchronization at a high level.
