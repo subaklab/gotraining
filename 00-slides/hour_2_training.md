@@ -1,11 +1,11 @@
 ## Go Training - Hour 2
-In this hour we take a deeper tour of the language. We learn about methods, interfaces and embedding. We continue to explore what is idiomatic and how the language is very orthogonal. This includes following the community standards for coding and style.
+이번 시간에는 좀더 깊게 Go에 대해서 알아봅니다. 매소드, 인터페이스, 임베딩에 대해서  관용표현과 얼마나 직관적인지 알아봅니다. 다음과 같은 코딩 스타일을 따릅니다.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
-***Note: There is no time to spend working on the examples.***
+***Note: 여기서는 예제로 실습하기에 시작이 부족합니다.***
 
-#### Methods, Interfaces and Embedding
+#### 메소드(Methods), 인터페이스(Interfaces) 그리고 임베딩(Embedding)
 [Methods](../03-methods_interfaces_embedding/01-methods/readme.md) | 
 [Interfaces](../03-methods_interfaces_embedding/02-interfaces/readme.md) | 
 [Embedding](../03-methods_interfaces_embedding/03-embedding/readme.md)
