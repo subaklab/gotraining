@@ -49,9 +49,9 @@ http://www.goinggo.net/
 
 https://ardanlabs.typeform.com/to/QzRgXk
 
-## Current Classes
+## 워크샵 문의
 
-If you are interested in holding an event in your area please let me know. I will work with you and your organization to help make it happen. I can talk in person or over Google Hangout.
+Go 워크샵을 개최하는데 관심이 있는 분은 연락주세요.
 
 **Corporate:**  
 [Rackspace - May 27th-29th](http://www.racespace.com/)
