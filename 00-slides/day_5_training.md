@@ -1,9 +1,9 @@
 ## Go Training - Day 5
-On this day we build a program that implements functionality that can be found in many Go programs being developed today. The program pulls different data feeds from the web and compares the content against a search term. The content that matches is then displayed to the terminal window. The program reads text files, makes web calls, decodes both XML and JSON into struct type values and finally does all of this using Go concurrency to make things fast.
+오늘은 다양한 Go프로그램에서 볼 수 있는 기능을 구현합니다. 이 프로그램은 Web에서 data를 가져와서 내용과 검색어를 비교합니다. 일치하는 내용이 있으면 터미널 윈도우에 표시합니다. 프로그램은 텍스트 파일을 읽고 web calls를 만들고 XML과 JSON를 구조형 타입 값으로 디코딩하고 마지막으로 이 모든 것들이 빠르게 동작하도록 Go 동시성을 사용합니다.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
-#### Sample Program
+#### 셈플 프로그램
 
 ![Image of App.](../feed_app/architecture.png)
 
