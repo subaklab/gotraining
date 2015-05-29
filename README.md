@@ -1,8 +1,10 @@
-## Hardcore Go
-[Click Here To Review The Course Material](00-slides/readme.md)
+## 하드코어 Go(Hardcore Go)
+[과정 자료 보기](00-slides/readme.md)
 
-Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. Although it borrows ideas from existing languages, it has unusual properties that make effective Go programs different in character from programs written in its relatives. It balances the efficiency of a lower level systems language with the most important features of a high-level modern language. This creates a programming environment that allows you to be incredibly productive, performant and fully in control; in Go you can write less code and do so much more.
+Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 프로그래밍 언어입니다. 비록 기존의 언어의 아이디어를 빌려 왔지만 독창적인 속성을 통해 효과적으로 프로그래밍할 수 있습니다. 로우 레벨 시스템 언어가 가지는 효율성과 하이 레벨 언어가 가지는 특징을 가지고 있습니다. 프로그래밍 환경은 엄청난 생산성, 성능을 제공합니다. Go로 적은 코드로 많은 일을 해낼 수 있습니다.
 
+
+하드코어 Go는 3일 과정으로 구성되었으며 
 Hardcore Go is a 3 day class providing an intensive, comprehensive and idiomatic view of the Go programming language. The class explains at both a specification and implementation level, topics ranging from language syntax, OOP, concurrency, channels, testing, debugging and more. Great for anyone interested in getting a jump start on learning Go or wanting to understand more about the language and internals.
 
 ## Minimal Qualified Student
