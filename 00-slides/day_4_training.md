@@ -1,5 +1,5 @@
 ## Go Training - Day 4
-On this day we build a program that implements functionality that can be found in many Go programs being developed today. The program provides a sample to the html package to create a simple search engine. The engine supports Google, Bing and Blekko searches. You can request results for all three engines or ask for just the first result. Searches are performed concurrently. Use the GOMAXPROCS environment variables to run the searches in parallel.
+오늘은 다양한 Go프로그램에서 볼 수 있는 기능을 구현합니다. 단순한 검색엔진을 만들기 위해 html 패키지 관련 셈플을 제공합니다. 이 엔진은 Google, Bing 그리고 Blekko 검색을 지원합니다. 이 3개 엔진 모두에게 검색을 요청하거나 첫번째 결과만 요청할 수 있습니다. 검색은 동시에 수행됩니다. GOMAXPROCS 환경변수를 이용해서 병렬로 검색을 실행할 수 있습니다. 수 있습니다.
 
 *Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
