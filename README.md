@@ -1,7 +1,7 @@
 ## 하드코어 Go(Hardcore Go)
 [과정 자료 보기](00-slides/readme.md)
 
-Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 프로그래밍 언어입니다. 비록 기존의 언어의 아이디어를 빌려 왔지만 독창적인 속성을 통해 효과적으로 프로그래밍할 수 있습니다. 로우 레벨 시스템 언어가 가지는 효율성과 하이 레벨 언어가 가지는 특징을 가지고 있습니다. 프로그래밍 환경은 엄청난 생산성, 성능을 제공합니다. Go로 적은 코드로 많은 일을 해낼 수 있습니다.
+Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 프로그래밍 언어입니다. 비록 기존 언어의 아이디어도 빌려 왔지만 Go의 독창적인 속성을 통해 효과적으로 프로그래밍할 수 있습니다. 로우 레벨 시스템 언어가 가지는 효율성과 하이 레벨 언어가 가지는 특징을 가지고 있습니다. 프로그래밍 환경은 엄청난 생산성, 성능을 제공합니다. Go로 적은 코드로 많은 일을 해낼 수 있습니다.
 
 
 하드코어 Go는 3일 집중 과정으로 Go 프로그래밍의 이해를 높이고 관용적인 사용법을 배우게 됩니다. 이 과정에서는 언어의 문법, OOP, 동시성(concurrency), 채널(channel), 테스팅, 디버깅등과 같이 구체적이며 구현 레벨까지를 다룹니다.  Go의 내부적은 동작을 더 잘 이해하기를 바라거나 이제 막 시작한 개발자라면 도움을 얻을 수 있을 것입니다.
@@ -12,13 +12,13 @@ Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 �
 
 * 프로그래밍
 	* 학교에서 컴퓨터관련 과목 수강자 혹은 IT업계에서 최소 2년 경력자
-	* Familiar with structural and object oriented programming styles.
-	* Has worked with arrays, lists, queues and stacks.
-	* Understands processes, threads and synchronization at a high level.
-	* Operating Systems
-    	* Has worked with a command shell.
-    	* Knows how to maneuver around the file system.
-    	* Understands what environment variables are.
+	* 구조적 및 객체지향 프로그래밍 스타일에 대한 기본 지식
+	* array, list, queue, stack과 같이 기본 자료 구조의 이해
+	* process, thread, 동기화(synch) 이해 
+	* 운영체제 동작 기본 지식 
+    	* 커맨드쉘 기본 동작
+    	* 파일 시스템 기본 동작
+    	* 환경 변수 기본
 
 * What a student is expected to learn
 	* Thorough understanding of the language syntax and implementation.
