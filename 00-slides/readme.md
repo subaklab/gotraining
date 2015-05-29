@@ -1,43 +1,43 @@
-## Go Training Classes
-Please choose the class and timeframe you are taking.
+## Go Training 수업
+가능한 시간에 따라 수업을 선택하세요.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다. 다음과 같은 배경지식이 있는 수강자에게 적합한 교육입니다.*
 
-#### Starter Material
+#### 초보자를 위한자료
 
 [Quick Tour](quick_tour)
 
-#### Installation Mac
+#### Mac에 설치하기
 
 http://www.goinggo.net/2013/06/installing-go-gocode-gdb-and-liteide.html
 
-#### Slides
+#### 슬라이드 자료
 
-[Opening Slide Deck](day1/opening/slide1.md)
+[시작 슬라이드](day1/opening/slide1.md)
 
 #### Classes - Hourly
 
-[Hour One Training](hour_1_training.md)  
-[Hour Two Training](hour_2_training.md)
+[1시간 Training](hour_1_training.md)  
+[2시간 Training](hour_2_training.md)
 
-#### Language Class - One Day
+#### 언어 수업 - 1일
 
-[One Day Training](one_day_training.md)  
+[1일 Training](one_day_training.md)  
 
-#### Language Classes - Daily
+#### 언어 수업 - 일별
 
-[Day One Training](day_1_training.md)  
-[Day Two Training](day_2_training.md)  
-[Day Three Training](day_3_training.md)
+[첫째날 Training](day_1_training.md)  
+[둘째날 Training](day_2_training.md)  
+[셋째날 Training](day_3_training.md)
 
-#### Advanced Classes - Daily
+#### 고급반 - 일별
 
-[Day Four Training](day_4_training.md)  
-[Day Five Training](day_5_training.md)
+[넷째날 Training](day_4_training.md)  
+[다섯째날 Training](day_5_training.md)
 
 ___
 [![Ardan Labs](images/ggt_logo.png)](http://www.ardanlabs.com)
 [![Ardan Studios](images/ardan_logo.png)](http://www.ardanstudios.com)
 [![GoingGo Blog](images/ggb_logo.png)](http://www.goinggo.net)
 ___
-All material is licensed under the [GNU Free Documentation License](https://github.com/ArdanStudios/gotraining/blob/master/LICENSE).
+모든 자료는 [GNU Free Documentation License](https://github.com/ArdanStudios/gotraining/blob/master/LICENSE) 라이센스하에 작성되었습니다.
