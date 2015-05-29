@@ -1,7 +1,7 @@
 ## Go Training - Day 3
 On this day we continue go deeper into Go. We learn about concurrency patterns, testing, benchmarking, profilng, logging, encoding, io, and reflection.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
 #### Concurrency Patterns
 [Concurrency Patterns](../08-concurrency_patterns/readme.md)
