@@ -1,16 +1,16 @@
 ## Go Training - Hour 1
-In this hour we take a very quick and initial tour of the language. We learn about variables, types, pointers and functions. We also explore what is idiomatic and how the language is very orthogonal. This includes following the community standards for coding and style.
+1시간 동안 Go에 대해서 간략히 살펴봅시다. 변수, 타입, 포인터와 함수에 대해서 배워봅니다. 관용표현과 얼마나 직관적인지 알아봅니다. 다음과 같은 코딩 스타일을 따릅니다.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다*
 
-***Note: There is no time to spend working on the examples.***
+***Note: 여기서는 예제로 실습하기에 시작이 부족합니다.***
 
-#### Basic Language Syntax
+#### 기본 언어 문법(Basic Language Syntax)
 
-[Variables](../01-language_syntax/01-variables/readme.md) | 
-[Struct Types](../01-language_syntax/02-struct_types/readme.md) | 
-[Pointers](../01-language_syntax/03-pointers/readme.md) | 
-[Functions](../01-language_syntax/06-functions/readme.md)
+[변수(Variables)](../01-language_syntax/01-variables/readme.md) | 
+[구조체 타입(Struct Types)](../01-language_syntax/02-struct_types/readme.md) | 
+[포인터(Pointers)](../01-language_syntax/03-pointers/readme.md) | 
+[함수(Functions)](../01-language_syntax/06-functions/readme.md)
 
 ___
 [![Ardan Labs](images/ggt_logo.png)](http://www.ardanlabs.com)
