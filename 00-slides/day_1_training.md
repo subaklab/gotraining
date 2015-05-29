@@ -1,9 +1,9 @@
 ## Go Training - Day 1
-On this day we take our initial tour of the language. We learn about variables, types, data structures and OOP. We also explore what is idiomatic and how the language is very orthogonal. This includes following the community standards for coding and style.
+오늘 처음으로 Go언어에 대해 탐험해 봅니다. 변수, 타입(types), 자료구조 그리고 OOP(객체지향)에 대해서 알고 있습니다. 관용표현과 얼마나 직관적인지 알아봅니다. 다음과 같은 코딩 스타일을 따릅니다.
 
 *Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
 
-#### Language Syntax
+#### 언어 문법
 [Variables](../01-language_syntax/01-variables/readme.md) | 
 [Struct Types](../01-language_syntax/02-struct_types/readme.md) | 
 [Pointers](../01-language_syntax/03-pointers/readme.md) | 
@@ -11,12 +11,12 @@ On this day we take our initial tour of the language. We learn about variables, 
 [Type Conversions](../01-language_syntax/05-type_conversions/readme.md) | 
 [Functions](../01-language_syntax/06-functions/readme.md)
 
-#### Arrays, Slices and Maps
+#### Arrays, Slices 그리고 Maps
 [Arrays](../02-array_slices_maps/01-arrays/readme.md) | 
 [Slices](../02-array_slices_maps/02-slices/readme.md) | 
 [Maps](../02-array_slices_maps/03-maps/readme.md)
 
-#### Methods, Interfaces and Embedding (OOP)
+#### Methods, Interfaces 그리고 Embedding (OOP)
 [Methods](../03-methods_interfaces_embedding/01-methods/readme.md) | 
 [Interfaces](../03-methods_interfaces_embedding/02-interfaces/readme.md) | 
 [Embedding](../03-methods_interfaces_embedding/03-embedding/readme.md)
