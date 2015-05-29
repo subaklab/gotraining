@@ -1,19 +1,19 @@
-# Getting Started
+# 시작하기
 
-Series of quick Go tutorials to show you a few things.
+몇 가지 예제를 통해 빠르게 익혀봅시다.
 
-## [Installing Go](INSTALL.md)
+## [Go 설치](INSTALL.md)
 
-This is a quick start guide to show you how to install Go, and write your first `Hello World` program.
+이것은 시작 가이드로 Go설치 방법과 처음으로  `Hello World` 프로그램을 작성해 봅니다.
 
-## [Your first Command Line Program](CLI.md)
+## [첫번째 커맨드라인 프로그램(Command Line Program)](CLI.md)
 
-This tutorial will show you how to create a basic command line program that accepts arguments.
+기본 커맨드라인 프로그램을 작성하는 방법과 인자를 받는 방법을 배워봅니다.
 
-## [Your First Webserver](HTTP.md)
+## [첫번째 웹서버](HTTP.md)
 
 Learn how to spin up a web server and how to route incoming requests.
 
-## [Basic Concurrency](CONCURRENCY.md)
+## [동시성(Concurrency) 기본](CONCURRENCY.md)
 
-See a couple of basic concurrency patterns.
+몇 가지 기본 동시성 패턴에 대해서 알아봅니다.
