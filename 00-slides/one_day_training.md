@@ -1,27 +1,27 @@
 ## One Day Training
-On this day we take our initial tour of the language. We learn about variables, types, data structures, OOP, concurrency and channels. We also explore what is idiomatic and how the language is very orthogonal. This includes following the community standards for coding and style.
+오늘은 처음으로 Go언어에 대해서 알아봅니다. 변수, 타입, 자료구조, 객체지향(OOP), 동시성과 채널에 대해서 배워봅니다. 관용표현과 얼마나 직관적인지 알아봅니다. 다음과 같은 코딩 스타일을 따릅니다.
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
+*Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
-#### Language Syntax
-[Variables](../01-language_syntax/01-variables/readme.md) | 
-[Struct Types](../01-language_syntax/02-struct_types/readme.md) | 
-[Pointers](../01-language_syntax/03-pointers/readme.md) | 
-[Functions](../01-language_syntax/06-functions/readme.md)
+#### 언어 문법(Language Syntax)
+[변수(Variables)](../01-language_syntax/01-variables/readme.md) | 
+[자료구조(Struct Types)](../01-language_syntax/02-struct_types/readme.md) | 
+[포인터(Pointers)](../01-language_syntax/03-pointers/readme.md) | 
+[함수(Functions)](../01-language_syntax/06-functions/readme.md)
 
-#### Arrays and Slices
+#### Arrays 와 Slices
 [Arrays](../02-array_slices_maps/01-arrays/readme.md) | 
 [Slices](../02-array_slices_maps/02-slices/readme.md)
 
-#### Methods, Interfaces and Embedding (OOP)
+#### 메소드(Methods), 인터페이스(Interfaces) 그리고 임베딩(Embedding (OOP))
 [Methods](../03-methods_interfaces_embedding/01-methods/readme.md) | 
 [Interfaces](../03-methods_interfaces_embedding/02-interfaces/readme.md) | 
 [Embedding](../03-methods_interfaces_embedding/03-embedding/readme.md)
 
-#### Packaging and Exporting
+#### 패키징(Packaging)과 익스포팅(Exporting)
 [Packaging and Exporting](../04-packaging_exporting/readme.md)
 
-#### Concurrency, Race Conditions and Channels
+#### 동시성(Concurrency), 경쟁상태(Race Conditions) 그리고 채널(Channels)
 [Goroutines](../07-concurrency_channels/01-goroutines/readme.md) | 
 [Channels](../07-concurrency_channels/03-channels/readme.md)
 
