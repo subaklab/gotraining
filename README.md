@@ -20,32 +20,32 @@ Go는 빌드가 단순하고 효율적인 SW를 만들수 있는 오픈소스 �
     	* 파일 시스템 기본 동작
     	* 환경 변수 기본
 
-* What a student is expected to learn
-	* Thorough understanding of the language syntax and implementation.
-	* A feel for writing code in an idiomatic style and syntax.
-	* Walk away with patterns and techniques for solving common problems. 
+* 기대 학습 효과
+	* Go문법 및 구현에 대한 철저한 이해
+	* Go가 권장하는 스타일과 문법으로 코드 작성
+	* 일반적 문제 해결을 위한 패턴과 기술 익히기
 
-## Before You Come To Class
+## 수강전 준비 사항
 
-**Install Go On Mac OS X:**  
+**Mac OS X에 Go 설치:**  
 http://www.goinggo.net/2013/06/installing-go-gocode-gdb-and-liteide.html
 
-**Install Go On Windows:**  
+**Windows에 Go 설치:**  
 http://www.wadewegner.com/2014/12/easy-go-programming-setup-for-windows/
 
-**Starter Material:**  
+**초보자를 위한 자료:**  
 [Quick Tour](00-slides/quick_tour)
 
-**Learn More:**  
+**참고자료:**  
 http://golang.org/  
 https://tour.golang.org/welcome/1  
 http://www.goinggo.net/
 
-## Go Get The Material
+## 자료 얻기
 
     go get github.com/ArdanStudios/gotraining
 
-## Feedback Form
+## 피드백
 
 https://ardanlabs.typeform.com/to/QzRgXk
 
