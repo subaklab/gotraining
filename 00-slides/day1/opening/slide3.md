@@ -12,17 +12,17 @@
 </table>
 
 ### 빌트인 함수(Built-In Functions)
-Built-in functions enhance the programming language by providing functionality that in many other languages are left up to the developer to implement. Many of these functions make writing code in Go easier, more consistent and less prone to errors. The highlighted built-in functions are functions that are very important and will be used often in the class.
+다른 언어에서는 개발자가 구현해야 하는 함수를 프로그래밍 언어에서 제공하는 빌트인 함수가 있습니다. 이런 많은 함수들로 더 쉽게 Go를 이용할 수 있고 일관성과 에러를 줄일 수 있습니다. 강조한 빌트인 함수는 매우 중요해서 자주 사용됩니다.
 
 <table>
 <tr><td><b>append</b></td><td>cap</td><td><b>close</b></td><td>complex</td><td>copy</td><td>delete</td><td>imag</td><td><b>len</b></td><td><b>make</b></td><td>new</td></tr>
 <tr><td>panic</td><td>real</td><td><b>recover</b></td><td colspan="7"></td></tr>
 </table>
 
-### Standard Library
-Go's standard library is rich with functionality that provide a lot of functionality without having to use 3rd party packages. Check out the link and see for yourself. [Standard Library](http://golang.org/pkg/)
+### 표준 라이브러리
+Go 표준 라이브러리는 제3자가 제공하는 패키지 없이도 많은 기능을 가지고 있다. 아래 링크를 직접 확인하기 바람. [Standard Library](http://golang.org/pkg/)
 
-#### [Previous Slide](slide2.md) | [Next Slide](slide4.md)
+#### [이전 슬라이드](slide2.md) | [다음 슬라이드](slide4.md)
 ___
 [![Ardan Labs](../../images/ggt_logo.png)](http://www.ardanlabs.com)
 [![Ardan Studios](../../images/ardan_logo.png)](http://www.ardanstudios.com)
