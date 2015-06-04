@@ -1,14 +1,14 @@
 ## Hello World
 
-Let's make sure of local development environment is working.
+개발 환경설정이 제대로 되었는지 확인해 봅시다.
 
-### Code Samples
+### 코드 셈플
 
 [Hello World](../quick/hello/hello.go) ([Go Playground](http://play.golang.org/p/JdC_UYCWAR))
 
 [Hello World Web](../quick/helloHTTP/helloHTTP.go) ([Go Playground](http://play.golang.org/p/c44Q5OiX5z))
 
-#### [Previous Slide](slide3.md) | [Start Training](../../readme.md)
+#### [이전 슬라이드](slide3.md) | [Training 시작](../../readme.md)
 ___
 [![Ardan Labs](../../images/ggt_logo.png)](http://www.ardanlabs.com)
 [![Ardan Studios](../../images/ardan_logo.png)](http://www.ardanstudios.com)
