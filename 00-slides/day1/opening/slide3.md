@@ -1,7 +1,7 @@
-## Keywords, Built-In Functions. Operators and Packages
+## 키워드, 빌트인 함수, 연산자와 패키지(Keywords, Built-In Functions. Operators and Packages)
 
-### Keywords
-Keywords are at the heart of most programming languages, and Go is no exception. These are reserved words that provide structure and meaning to the language. The emphasized keywords that follow have unique or uncommon characteristics and lend distinctiveness to the Go language.
+### 키워드(Keywords)
+키워드의 프로그래밍 언어에 있어서 핵심이 되며 Go에서도 예외일 순 없다. 구조와 의미를 해당 언어에 제공하는 예약어이다. 아래 강조한 키워드는 Go언어가 다른 언어와 차별화되는 독특하고 차별화된 특성을 제공한다.
 
 <table>
 <tr><td>break</td><td>case</td><td><b>chan</b></td><td><b>const</b></td><td>continue</td></tr>
@@ -11,7 +11,7 @@ Keywords are at the heart of most programming languages, and Go is no exception.
 <tr><td><b>select</b></td><td>struct</td><td>switch</td><td><b>type</b></td><td>var</td></tr>
 </table>
 
-### Built-In Functions
+### 빌트인 함수(Built-In Functions)
 Built-in functions enhance the programming language by providing functionality that in many other languages are left up to the developer to implement. Many of these functions make writing code in Go easier, more consistent and less prone to errors. The highlighted built-in functions are functions that are very important and will be used often in the class.
 
 <table>
