@@ -1,6 +1,6 @@
-# Concurrency
+# 동시성(Concurrency)
 
-In this quick start guide, we will cover the basics of working concurrently.
+여기서는 동시성의 기본에 대해서 알아보자.
 
 ## Retrieving Websites
 
