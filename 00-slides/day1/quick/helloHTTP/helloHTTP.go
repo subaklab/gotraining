@@ -23,6 +23,7 @@ type (
 func main() {
 	http.HandleFunc("/english", helloEnglish)
 	http.HandleFunc("/chinese", helloChinese)
+	http.HandleFunc("/korean", helloKorean)
 	http.ListenAndServe("localhost:9999", nil)
 }
 
@@ -44,4 +45,14 @@ func helloChinese(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	log.Println("Sent Chinese")
+}
+
+// helloKorea sends a greeting in Korean.
+func helloKorean(w http.ResponseWriter, r *http.Request) {
+	err := json.NewEncoder(w).Encode(hello{"안녕하세요"})
+	if err != nil {
+		log.Println("Error encoding JSON", err)
+		return
+	}
+	log.Println("Sent Korean")
 }
