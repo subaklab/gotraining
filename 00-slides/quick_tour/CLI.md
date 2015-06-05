@@ -82,16 +82,15 @@ Hello!
 go build cli.go
 ```
 
-You will now have a file called `cli` that is an executable.  To run that, issue this command:
+`cli`라는 실행 가능한 파일이 생성된다. 아래 명령으로 실행한다.:
 
 ```sh
 ./cli -cmd=hello
 ```
 
-## Summary
+## 요약
 
-Congratulations, you just wrote your first command line program!  We only scratched the surface,
-but I hope you enjoyed the quick start.
+축하! 지금까지 커맨드 라인 프로그램을 작성해봤다. 이제 기본적인 것을 경험했다. 재밌게 즐겼기를~
 
 
 
