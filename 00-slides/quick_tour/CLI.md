@@ -1,15 +1,14 @@
-# Basic Command Line Program
+# 기본 커맨드 라인 프로그램
 
-Go allows you to quickly and easily create a command line program.
+Go를 이용하면 커맨드 라인 프로그램을 빠르고 쉽게 만들 수 있다.
 
-In this guide, we will cover the basic concepts command line arguments using the
-[http://golang.org/pkg/flag/](Flags Package).
+[http://golang.org/pkg/flag/](Flags Package)을 이용해서 기본 커맨드 라인 컨셉을 설명한다.
 
-## Simple CLI
+## 단순한 CLI
 
-In our first program, we will see what we get out of the box with very little effort.
+첫번째 프로그램에서 별다른 어려움 없이 box를 꺼낼 수 있다.
 
-Create the following program by opening a file called `cli.go` and adding the following contents:
+`cli.go` 파일을 열어서 다음 프로그램을 생성하고 다음 내용을 추가:
 
 ```go
 // https://play.golang.org/p/DPigLqZ5Co
@@ -38,30 +37,30 @@ func main() {
 }
 ```
 
-To run the program, issue this command:
+아래 명령으로 프로그램을 실행한다:
 
 ```sh
 go run cli.go
 ```
 
-You should get something like this:
+아래와 같이 :
 
 ```sh
 Usage of /var/folders/l7/3s7z7s1s4n72lvj4w6g_fdmm0000gn/T/go-build844850686/command-line-arguments/_obj/exe/basic:
   -cmd="": cmd can be either "hello" or "bye"
 ```
 
-## Breaking it down.
+## 분해하기
 
-As you can see, if we don't provide any arguments, it prints out the `Usage` of the program.
+인자를 넣지 않으면 이 프로그램의 `Usage`를 출력한다.
 
-Let's pass it an argument:
+인자를 주는 경우:
 
 ```sh
 go run cli.go -cmd=hello
 ```
 
-Now you should see that it prints 
+이제 아래와 같은 출력을 볼 수 있다. 
 
 ```sh
 Hello!
@@ -70,14 +69,14 @@ Hello!
 
 ## flag.StringVar
 
-This method allows us to tell the flag package to look for specific argument names, in this case, `cmd`.
+이 메소드는 특정 인자 이름을 찾는다고 flag 패키지에게 전달할 수 있다. 이 경우는 `cmd`이다.
 
-For more information, see the definition for [http://golang.org/pkg/flag/#FlagSet.StringVar](StringVar).
+추가 정보는 [http://golang.org/pkg/flag/#FlagSet.StringVar](StringVar)에서 찾을 수 있다.
 
 
-## Compiling a binary
+## 바이너리(binary) 컴파일하기
 
-But wait, what if I want to actually compile the binary?  Easy enough, run this command:
+왜 binary로 컴파일이 필요한지 생각해보자. 다음 커맨드로 쉽게 해결:
 
 ```sh
 go build cli.go
