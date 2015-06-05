@@ -2,19 +2,17 @@
 
 여기서는 동시성의 기본에 대해서 알아보자.
 
-## Retrieving Websites
+## 웹사이트 검색
 
-Sometimes, we need to do a lot of operations that will take an unkown length of time.
-We want to do this as fast and effeciently as possible, so we can use Go's built in concurrecy.
+얼마나 시간이 걸리지 모르는 많은 연산이 있다. 가능한한 빠르고 효율적으로 처리하기를 원하므로 Go에서 제공하는 동시성을 이용하면 된다.
 
-## The problem
+## 프로그램
 
-To keep things simple, let's pretend we have a list of websites we want to monitor response times.
+단순화시켜 응답시간을 모니터링하는 웹사이트의 리스트가 있다고 가정하자.
 
+## 기본 CLI
 
-## Basic CLI
-
-We will start with a basic command line program that accepts arguments as the websites to retrieve.
+인자로 웹사이트를 받아 검색하는 기본 커맨드 라인 프로그램으로 시작한다.
 
 ```go
 // https://play.golang.org/p/GDaMvunNMZ
@@ -34,23 +32,23 @@ func main() {
 }
 ```
 
-Running this program with the following arguments:
+아래와 같은 인자로 이 프로그램을 실행한다.:
 
 ```sh
 go run monitor.go http://google.com http://yahoo.com
 ```
 
-You will see that we output the following:
+다음과 같이 출력된다:
 
 ```sh
 [http://google.com http://yahoo.com]
 ```
 
-## Retreiving and recording response times
+## 검색과 응답시간 기록
 
-Now we want to retrieve them and record response times.
+웹사이트를 검색하고 응답시간을 기록하고자 한다.
 
-Change the program as such:
+아래와 같이 프로그램을 변경하자:
 
 ```go
 // https://play.golang.org/p/I-gUNt3biw
@@ -91,13 +89,13 @@ func main() {
 }
 ```
 
-Now run the program:
+이제 프로그램을 실행하자:
 
 ```sh
 go run monitor.go http://google.com http://yahoo.com
 ```
 
-Times may vary, but this is the output I received:
+시간은 다를 수 있지만 아래와 같은 출력값을 볼 수 있다:
 
 ```sh
 Site "http://google.com" took 119.178774ms to retrieve.
@@ -165,13 +163,13 @@ func main() {
 }
 ```
 
-Run it again:
+다시 실행해 보자:
 
 ```sh
 go run monitor.go http://google.com http://yahoo.com
 ```
 
-Now you should see an output something like this when you run it:
+이제 실행할 때 아래와 같은 출력을 볼 수 있다:
 
 ```sh
 Site "http://google.com" took 131.805645ms to retrieve.
