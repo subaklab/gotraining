@@ -1,14 +1,14 @@
-# Your first Web Server
+# 첫번째 웹 서버(Web Server)
 
-In this quick start guide, we will cover the following basics:
+아래와 같은 내용을 다룹니다:
 
-- Spin up a webserver
-- Basic Routing
-- Your first template
+- 웹서버(webserver) 돌리기
+- 기본 라우팅(Routing)
+- 첫번째 템플릿(template)
 
-## Running the webserver
+## 웹서버 실행
 
-The first thing we are going to do is run a webserver. We can do this in just a few lines of code.
+처음으로 해야하는 일은 웹서버를 실행하는 것이다. 몇 줄의 코드로 이 일을 할 수 있다.
 
 Open a file  called `webserver.go` and add the following content:
 
