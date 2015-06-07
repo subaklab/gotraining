@@ -34,38 +34,37 @@ brew install go
 
 ## 환경설정하기
 
-Go requires you to set the  `GOPATH` for the compiler to work properly.
+컴파일러가 제대로 동작하기 위해서 `GOPATH`를 설정해야 한다.
 
-### GOPATH on Mac or Linux
+### Mac과 리눅스에서 GOPATH
 
 ```sh
 mkdir $HOME/go
 export GOPATH=$HOME/go
 ```
 
-In depth details on `GOPATH can be found [https://code.google.com/p/go-wiki/wiki/GOPATH](here).
+GOPATH에 대해서 좀더 상세한 자료는 [https://code.google.com/p/go-wiki/wiki/GOPATH](here).
 
-## GOPATH on  Windows
+## Windows에서 GOPATH
 
-From a command prompt:
+커맨드 프롬프트에서 :
 
 ```sh
 mkdir "%USERPROFILE%\go"
 ```
 
-Go to the Control Panel > System > Advanced Tab > Environment Variables.
+제어판 > 시스템 > Advanced Tab > 환경변수
 
-Add a new *User* Variable (not a system variable)
+새로운 *사용자(User)* 변수 추가 (시스템 변수가 아님)
 
-Variable name: GOPATH
-Variable value: %USERPROFILE%\go
+변수 이름 : GOPATH
+변수 값 : %USERPROFILE%\go
 
-*NOTE:* You may need to reboot for this variable to take effect.
+*NOTE:* 변수 설정이 제대로 동작하기 위해서는 reboot이 필요할 수 있다.
 
-## Your first Go program
+## 첫번째 Go 프로그램
 
-Ok, now it's time to create our first go program.  To do so, create a file called `hello.go` with your
-preferred text editor, and add the following content:
+자 이제 처음으로 Go 프로그램을 작성해 볼 차례다. 이렇게 하기 위해서 원하는 편집기로 `hello.go` 파일을 생성하고 다음과 같은 내용을 채운다:
 
 ```go
 package main
@@ -77,21 +76,20 @@ func main() {
 }
 ```
 
-To run it, use the following command:
+실행하기 위해서 다음과 같은 명령을 사용한다:
 
 ```sh
 $ go run hello.go
 hello, world
 ```
-If you see the "hello, world" message then your Go installation is working.
+"hello, world" 메시지를 보면 설치한 Go가 제대로 동작한다는 것이다.
 
-*NOTE:* This was taken directly from [golang.org/doc/install](http://golang.org/doc/install)
+*NOTE:* [golang.org/doc/install](http://golang.org/doc/install)에서 참고하자.
 
 
-## Summary
+## 요약
 
-Congratulations, you can now write more Go code!
-
+축하! 자 이제 더 많은 Go 코드를 작성해 보자!
 
 
 
