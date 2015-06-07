@@ -103,11 +103,11 @@ Site "http://yahoo.com" took 581.01092ms to retrieve.
 Entire process took 700.245713ms
 ```
 
-## Make it concurrent
+## 동시성을 갖도록 만들기
 
-Ok, as we can see, we should be able to speed this up quite a bit by making the program concurrent.
+속도를 내기 위해서 동시에 실행되도록 하자.
 
-Make the following changes:
+다음과 같이 변경하자:
 
 ```go
 // https://play.golang.org/p/Lc3tS8kprX
@@ -177,13 +177,12 @@ Site "http://yahoo.com" took 541.624279ms to retrieve.
 Entire process took 541.743794ms
 ```
 
-Notice how it not only takes slightly longer than the longest request?  This is due to everything running concurrently.
+가장 오래걸리는 request보다 약간더 길어지는 것이 아니라는 것을 알 수 있다. 모든 것이 동시에 실행되기 때문이다.
 
-The big difference with the final program is the use of a `WaitGroup` and launching everything
-inside of a go routine by using the `go func` signature.
+마지막 프로그램과 가장 큰 차이점은 `WaitGroup`를 사용하고 `go func` 사용해서 go routine으로 모든 것을 실행시킨다는 것이다.
 
-You can read more on wait groups in the [Sync Package](http://golang.org/pkg/sync).
+[Sync Package](http://golang.org/pkg/sync)에서 wait group에 대한 자료를 참고하자 .
 
-## Summary
+## 요약
 
-Congratulations, you just wrote your first concurrenty program!
+처음으로 동시성 프로그램을 작성했다!
