@@ -10,7 +10,7 @@
 
 처음으로 해야하는 일은 웹서버를 실행하는 것이다. 몇 줄의 코드로 이 일을 할 수 있다.
 
-Open a file  called `webserver.go` and add the following content:
+`webserver.go` 파일을 열고 다음 내용을 추가하자:
 
 ```go
 // https://play.golang.org/p/x4iJhctz8e
@@ -35,19 +35,19 @@ func main() {
 }
 ```
 
-To run this issue the following command:
+실행하기 위해 다음과 같은 명령을 실행하자:
 
 ```sh
 go run website.go
 ```
 
-Then open web browser on [http://localhost:8080](http://localhost:8080)
+다음으로  [http://localhost:8080](http://localhost:8080) 주로소 웹브라우저를 연다.
 
-As you can see, we are just writing out a basic "Hello world" followed by the path.
+보는 바와같이 기본 "Hello world"를 출력한다.
 
-Now go to this url: [http://localhost:8080/foo](http://localhost:8080/foo)
+이제 다음 url로 이동하자: [http://localhost:8080/foo](http://localhost:8080/foo)
 
-As you can see, this webserver will respond to any route you give it.  We really don't want that so let's change the code as follows:
+이 웹서버는 입력 라우트에 따라 동작한다. 다음과 같은 동작을 하는 것이 최종 목표는 아니다:
 
 ```go
 // https://play.golang.org/p/CUnPy2CKqI
@@ -81,31 +81,30 @@ func Index(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-You will notice that we are using our first `external` package called `github.com/gorilla/mux`.
+`github.com/gorilla/mux`라는 `external` 패키지를 사용했다는 것을 알수 있다.
 
-To make sure this is on your computer and allow the program to compile you need to `get` it with the following command:
+이 패키지에 여러분 컴퓨터에 있는지와 해당 프로그램이 컴파일 되는지 확인하기 위해서 `get`을 이용한 다음 명령을 실행한다:
 
 ```sh
 go get github.com/gorilla/mux
 ```
 
-Now, we can fire up the server again:
+이제 서버를 다시 실행한다:
 
 ```sh
 go run website.go
 ```
 
-Now open web browser on [http://localhost:8080](http://localhost:8080).  As you can see nothing new is really going on.
+이제 [http://localhost:8080](http://localhost:8080) 주소로 웹브라우저를 연다. 보는 바와 같이 새로운 것은 없다.
+
+하지만 [http://localhost:8080/foo](http://localhost:8080/foo)로 가면 페이지를 찾을 수 없다는 메시지를 보게 된다.
 
 
-However, if you go to [http://localhost:8080/foo](http://localhost:8080/foo), you now get a page not found, as we expected
+## 템플릿(Templates)
 
+기본 템플릿을 만든다. 이렇게 하기 위해서 [http://golang.org/pkg/html/template/](html/template) 패키지를 이용한다.
 
-## Templates
-
-Now we need to make a basic template.  To do so, we will use the [http://golang.org/pkg/html/template/](html/template) package.
-
-Change the program as follows:
+프로그램을 다음과 같이 변경한다:
 
 ```go
 // https://play.golang.org/p/N5c1LMZWe_
@@ -190,8 +189,8 @@ func htmlTemplate(pd PageData) (string, error) {
 }
 ```
 
-### Summary
+### 요약
 
-Congratulations, you have your first basic webserver!
+여러분의 첫번째 웹서버를 축하한다.
 
 
