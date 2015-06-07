@@ -1,38 +1,38 @@
-# Installing Go
+# Go 설치하기
 
-Installing Go is a very simple process, but if you want the entire set of tools, it can be more complicated.
+Go를 설치하는 과정은 아주 단순하다. 하지만 제공하는 툴 전체를 설치하기 원하는 경우에는 좀 복잡할 수 있다.
 
-We wil cover just the basic installation in this quick start guide.
+여기서는 Quick Tour를 위해 필요한 기본 설치에 대해서만 다룬다.
 
-## What Operating System?
+## 어떤 OS를 사용하는가?
 
-Go can run natively on most operating systems, including Windows, Mac, and Linux.
+Go는 Windows, Mac, 리눅스와 같이 대부분 OS에서 동작한다.
 
 ### Mac
 
-The quickest way to install on the mac is to use `HomeBrew`.
+Mac에서 가장 빠르게 설치하는 방법은 `HomeBrew`를 이용하는 방법이다.
 
-If you don't have `HomeBrew` you can install it easily with this line:
+`HomeBrew`가 없다면 아래와 같이 쉽게 설치할 수 있다.
 
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Once it is insatlled, simply run these commands:
+일단 설치되면 아래와 같은 명령으로 간단하게 실행한다:
 
 ```sh
 brew update
 brew install go
 ```
 
-### Windows and Linux
+### Windows와 리눅스
 
-You can download installers for all operating systems (Including Mac), including Windows, here:
+인스톨러를 다운받아서 설치하기(Mac도 포함):
 
 [http://golang.org/dl/](http://golang.org/dl/)
 
 
-## Setting up your Environment
+## 환경설정하기
 
 Go requires you to set the  `GOPATH` for the compiler to work properly.
 
