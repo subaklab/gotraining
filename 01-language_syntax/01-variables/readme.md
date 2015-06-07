@@ -1,32 +1,32 @@
-## Variables - Language Syntax
+## 변수 - 언어 문법
 
-Variables are at the heart of the language and provide the ability to read from and write to memory. In Go, access to memory is type safe. This means the compiler takes type seriously and will not allow us to use variables outside the scope of how they are declared.
+변수는 언어의 핵심중에 하나로 메모리에 읽고 쓰는 방법을 제공한다. Go에서 메모리 접근은 타입 안전성(type safe)을 지킨다. 이 뜻은 컴파일러가 타입이 아주 중요하다는 뜻이고 변수를 사용하는데 있어 선언한 타입의 범위를 벗어나는 것을 허용하지 않는다.
 
 ## Notes
 
-* When variables are being declared to their zero value, use the keyword var.
-* When variables are being declared and initialized, use the short variable declaration operator.
-* Escape analysis is used to determine when a value escapes to the heap.
+* 변수를 zero value로 선언하고 싶을 때, 키워드 var를 이용하라. 
+* 변수가 선언하고 초기화할 때, 짧은 변수 선언 연선자를 사용하라.
+* 값이 힙(heap)을 빠져나올 때를 결정하는데 Escape analysis를 이용한다.
 
 ## Links
 
-[Built-In Types](http://golang.org/ref/spec#Boolean_types)
+[Built-In 타입들](http://golang.org/ref/spec#Boolean_types)
 
 https://golang.org/doc/effective_go.html#variables
 
 http://www.goinggo.net/2013/08/gustavos-ieee-754-brain-teaser.html
 
-## Code Review
+## 코드 리뷰
 
-[Declare and initialize variables](example1/example1.go) ([Go Playground](http://play.golang.org/p/6w6hBNE75a))
+[변수 선언 및 초기화](example1/example1.go) ([Go Playground](http://play.golang.org/p/6w6hBNE75a))
 
-## Exercises
+## 연습문제
 
-### Exercise 1 
+### 문제 1 
 
-**Part A:** Declare three variables that are initialized to their zero value and three declared with a literal value. Declare variables of type string, int and bool. Display the values of those variables.
+**Part A:** 3개 변수를 선언하는데 zero value로 초기화하고 literal 값으로 선언한다. string, int 그리고 bool 이렇게 3개 타입 변수 선언한다. 이 변수의 값을 표시하라.
 
-**Part B:** Declare a new variable of type float32 and initialize the variable by converting the literal value of Pi (3.14).
+**Part B:** float32 타입의 새로운 변수를 선언하고 Pi(3.14) literal 값을 변환으로 변수를 초기화하라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/1xUWjHMB3I)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/d2M0Q3mRnd))
