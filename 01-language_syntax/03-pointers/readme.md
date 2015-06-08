@@ -1,13 +1,13 @@
-## Pointers - Language Syntax
+## 포인터(Pointers) - 언어 문법
 
-Pointers provide a way to share data across function boundaries. Having the ability to share and reference data with a pointer provides flexbility. It also helps our programs minimize the amount of memory they need and can add some extra performance.
+함수 경계를 data 공유하는 방법을 제공한다. 포인터로 data를 공유하고 참조함으로써 유연성을 제공한다. 프로그래에서 필요한 메모리의 양을 최소화하고 성능을 개선시킬 수 있다.
 
 ## Notes
 
-* Use pointers to share data.
-* Values in Go are always pass by value.
-* "Value of", what's in the box. "Address of" ( **&** ), where is the box.
-* The (*) operator declares a pointer variable and the "Value that the pointer points to".
+* data를 공유하는데 포인터를 사용하라.
+* Go에서 값은 항상 값에 의한 전달(pass by value)이다.
+* "Value of"는 값을 뜻하고, "Address of" ( **&** ), 주소를 뜻한다.
+* (*) 연산자는 포인터 변수를 선언하고 "포인터가 가리키는 값"을 뜻한다.
 
 ## Links
 
@@ -21,30 +21,30 @@ http://www.goinggo.net/2014/12/using-pointers-in-go.html
 
 ## Code Review
 
-[Pass by value](example1/example1.go) ([Go Playground](https://play.golang.org/p/nNnsK6hWdP))
+[값에 의한 전달(Pass by value)](example1/example1.go) ([Go Playground](https://play.golang.org/p/nNnsK6hWdP))
 
-[Sharing data I](example2/example2.go) ([Go Playground](https://play.golang.org/p/FWmGnVUDoA))
+[데이터 공유 I(Sharing data I)](example2/example2.go) ([Go Playground](https://play.golang.org/p/FWmGnVUDoA))
 
-[Sharing data II](example3/example3.go) ([Go Playground](http://play.golang.org/p/VYqb11RiWr))
+[데이터 공유 II(Sharing data II)](example3/example3.go) ([Go Playground](http://play.golang.org/p/VYqb11RiWr))
 
 ## Advanced Code Review
 
-[Stack vs Heap](advanced/example1/example1.go) ([Go Playground](http://play.golang.org/p/931Cw6uzsn))
+[스탭 vs 힙(Stack vs Heap)](advanced/example1/example1.go) ([Go Playground](http://play.golang.org/p/931Cw6uzsn))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A** Declare and initalize a variable of type int with the value of 20. Display the _address of_ and _value of_ the variable.
+**Part A** int 타입의 변수를 20 값으로 선언하고 초기화하라. _주소_(address of)와 _값_(value of)을 출력하라.
 
-**Part B** Declare and initialize a pointer variable of type int that points to the last variable you just created. Display the _address of_ , _value of_ and the _value that the pointer points to_.
+**Part B** 생성한 마지막 변수를 가리키는 int 타입의 포인터 변수를 선언하고 초기화하라. _주소_(address of)와 _값_(value of) 그리고 _포인터가 가리키는 값_(value that the pointer points to)을 출력하라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/asM7GXfJNk)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/pUtHSTN0Ef))
 
-### Exercise 2
+### 문제 2
 
-Declare a struct type and create a value of this type. Declare a function that can change the value of some field in this struct type. Display the value before and after the call to your function.
+구조체 타입을 선언하고 이 타입의 값을 생성하라. 이 구조체 타입에서 특정 필드의 값을 변경하는 함수를 선언하라. 만든 함수를 호출하기 전과 후의 값을 출력하라.
 
 [Template](exercises/template2/template2.go) ([Go Playground](http://play.golang.org/p/b6-FNFOToO)) | 
 [Answer](exercises/exercise2/exercise2.go) ([Go Playground](http://play.golang.org/p/oEtveMoO1s))

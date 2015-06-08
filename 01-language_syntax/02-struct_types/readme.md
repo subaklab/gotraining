@@ -1,12 +1,12 @@
-## Struct Types - Language Syntax
+## 구조체 타입(Struct types) - 언어 문법
 
-Struct types are a way of creating complex types that group fields of data together. They are a great way of organizing and sharing the different aspects of the data your program consumes.
+다양한 data 필드를 모아 복잡한 타입을 만드는 방법이다. 작성할 프로그램에서 사용할 다양한 데이터를 구성하고 공유하는 훌륭한 방법이다.
 
 ## Notes
 
-* We can use the struct literal form to intialize a value from a struct type.
-* The dot (.) operator allows us to access individual field values.
-* We can create anonymous structs.
+* 구조체 literal 형태로 값을 초기화할 수 있다.
+* '.' 연산자를 이용해서 각 필드 값에 접근할 수 있다.
+* 익명 구조체(Anonymous struct)를 생성할 수 있다.
 
 ## Links
 
@@ -14,23 +14,23 @@ http://www.goinggo.net/2013/07/understanding-type-in-go.html
 
 http://www.goinggo.net/2013/07/object-oriented-programming-in-go.html
 
-## Code Review
+## 코드 리뷰
 
-[Declare, create and initalize struct types](example1/example1.go) ([Go Playground](http://play.golang.org/p/-oeDmu2et8))
+[구조체 타입의 선언, 생성, 초기화](example1/example1.go) ([Go Playground](http://play.golang.org/p/-oeDmu2et8))
 
-[Anonymous struct types](example2/example2.go) ([Go Playground](http://play.golang.org/p/_xxuE1Ep6U))
+[익명 구조체 타입](example2/example2.go) ([Go Playground](http://play.golang.org/p/_xxuE1Ep6U))
 
 ## Advanced Code Review
 
 [Struct type alignments](advanced/example1/example1.go) ([Go Playground](http://play.golang.org/p/1CL1ACDipG))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A:** Declare a struct type to maintain information about a user (name, email and age). Create a value of this type, initalize with values and display each field.
+**Part A:** 사용자(이름, email, 나이)에 대한 정보를 가지는 구조체 타입을 선언하라. 이 타입의 값을 생성하고 초기화하여 각 필드의 값을 출력하라.
 
-**Part B:** Declare and initialize an anonymous struct type with the same three fields. Display the value.
+**Part B:** 동일한 3개 필드를 가지는 익명 구조체 타입을 선언하고 초기화하라. 값을 출력하라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/ItPe2EEy9X)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/tnn-8hJPUd))

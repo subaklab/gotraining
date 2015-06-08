@@ -1,13 +1,13 @@
-## Constants - Language Syntax
+## 상수(Constants) - 언어 문법
 
-Constants are a way to create a named identifier who's value can never change. They also provide an incredible amount of flexibility to the language. The way constants are implemented in Go is very unique.
+변경되지 않는 값에 대한 식별 이름을 생성하는 방법이다. 이를 이용하여 언어의 유연성을 높여준다. 다른 언어에 비해서 Go에서 특이한 방법으로 사용된다.
 
 ## Notes
 
-* Constants are not variables.
-* They existing only at compilation.
-* Untyped constants can be implictly converted where typed constants and variables can't.
-* Think of untyped constants as having a Kind, not a Type.
+* 상수는 변수가 아니다.
+* 컴파일 시에만 존재한다.
+* 타입을 가지지 않는 상수(untyped constant)는 묵시형 변환이 가능하다.(변수와 타입을 가지는 상수는 불가!)
+* 타입을 가지지 않는 상수는 타입(Type)이 아니라 종류(Kind)를 가진다고 생각하면 된다.
 
 ## Links
 
@@ -17,19 +17,19 @@ http://blog.golang.org/constants
 
 http://www.goinggo.net/2014/04/introduction-to-numeric-constants-in-go.html
 
-## Code Review
+## 코드 리뷰
 
-[Declare and inialize constants](example1/example1.go) ([Go Playground](http://play.golang.org/p/OLuzwK1oHT))
+[상수 선언 및 초기화](example1/example1.go) ([Go Playground](http://play.golang.org/p/OLuzwK1oHT))
 
-[Parallel type system (Kind)](example2/example2.go) ([Go Playground](http://play.golang.org/p/ExxRWe6jUz))
+[패러럴 타입 시스템(Parallel type system (Kind))](example2/example2.go) ([Go Playground](http://play.golang.org/p/ExxRWe6jUz))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A:** Declare an untyped and typed constant and display their values.
+**Part A:** 타입이 없는 그리고 타입을 가지는 상수를 선언하고 그 값을 출력하라.
 
-**Part B:** Multiply two literal constants into a typed variable and display the value.
+**Part B:** 2개 literal 상수를 곱해서 타입을 가지는 변수에 넣고 그 값을 출력하라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/kzZZ24O23g)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/d2gkKxEftw))

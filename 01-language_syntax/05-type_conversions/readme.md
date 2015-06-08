@@ -1,33 +1,33 @@
-## Type Conversions - Language Syntax
+## 타입 변환(Type Conversions) - 언어 문법
 
-Go is a strict type safe language so typed values must be explicitly converted from one type to the other. Untyped constants on the other hand can be implicitly converted by the compiler. These values exist in a kind system and have more flexibility. In these examples we will learn about named types and how the time package uses them, in conjuction with constants, to provide both a flexible and type safe API.
+엄격하게 타입을 지켜야하는 언어다. 따라서 타입을 가지는 값은 반드시 타입 변환시 명시적으로 변환을 해야한다. 반면에 타입이 없는 상수는 묵시적으로 컴파일러가 변환을 시켜준다. 이 값들은 종류 시스템(kind system)에 속해서 더 유연하다. 여기 예제에서는 유연하면서 type safe API를 제공하기 위해서 타입과 time 패키지를 어떻게 이용하는지 알아본다.
 
 ## Notes
 
-* Declare a type based on another type including built-in and user defined types.
-* Learn about explicit and implicit conversions.
-* See the power of constants and their use in the standard library.
-* Use typed constants are part of the API for your package functions and methods.
+* 빌트인(built-in)과 사용자 정의 타입을 기반으로 타입을 선언하라.
+* 명시/묵시적 변환에 대해서 배운다.
+* 상수가 가진 특징을 보고 표준 library에서 어떻게 사용했는지 알아보자.
+* 타입을 가지는 상수를 사용은 패키지 함수와 메소드를 위한 API의 일부다.
 
-## Code Review
+## 코드 리뷰
 
-[Declare, create and initalize named types](example1/example1.go) ([Go Playground](http://play.golang.org/p/mhKlxSyuxr))
+[새로운 타입 선언, 생성, 초기화(Declare, create and initalize named types)](example1/example1.go) ([Go Playground](http://play.golang.org/p/mhKlxSyuxr))
 
-[Named types in the standard library](example2/example2.go) ([Go Playground](http://play.golang.org/p/XJ4Ia1lMWl))
+[표준 라이브러리에서 named 타입(Named types in the standard library)](example2/example2.go) ([Go Playground](http://play.golang.org/p/XJ4Ia1lMWl))
 
-[Conversions I](example3/example3.go) ([Go Playground](http://play.golang.org/p/Rgoqvg8dNv))
+[타입변환 I(Conversions I)](example3/example3.go) ([Go Playground](http://play.golang.org/p/Rgoqvg8dNv))
 
-[Conversions II](example4/example4.go) ([Go Playground](http://play.golang.org/p/B75FURdQ7t))
+[타입변환 II(Conversions II)](example4/example4.go) ([Go Playground](http://play.golang.org/p/B75FURdQ7t))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A** Declare a named type called counter with a base type of int. Declare and initalize a variable of this named type to its zero value. Display the value of this variable and the variables type.
+**Part A** int 타입을 기반으로 counter라는 타입을 선언한다. 이 타입의 변수를 zero value로 선언하고 초기화한다. 이 변수의 값과 변수의 타입을 출력하라.
 
-**Part B** Declare a new variable of the named type assign it the value of 10. Display the value.
+**Part B** 위에서 만든 타입의 새로운 변수를 선언하고 10을 할당한다. 값을 출력하라.
 
-**Part C** Declare a variable of the same base type as your named typed. Attempt to assign the value of your named type variable to your new base type variable. Does the compiler allow the assignment?
+**Part C** 위에서 만든 타입을 기반으로 새로운 타입의 변수를 선언하라. 2개 타입의 값을 할당하는 코드를 작성한다. 컴파일러는 아무 문제 없이 동작할까?
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/Eg9m_rYm4V)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/x-a-6J0s-_))
