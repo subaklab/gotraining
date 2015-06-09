@@ -1,12 +1,12 @@
-## Functions - Language Syntax
+## 함수(Functions) - 언어 문법
 
-Functions are at the core of the language. They provide a mechanism to group and organize our code to separate and distinct pieces of functionality. They can be used to provide an API to the packages we write and are a core component to concurrency.
+함수는 언어의 핵심이다. 특정 기능을 담당하는 코드를 구조화하고 모아주는 역할을 한다. 우리가 작성한 패키지에 API를 제공할 수도 있고 이것들은 동시성에 핵심 컴포넌트가 된다.
 
 ## Notes
 
-* Functions can return multiple values and most return an error value.
-* The error value should always be checked as part of the programming logic.
-* The blank identifier can be used to ignore return values.
+* 함수는 여러 값을 반환하며 대부분 에러 값을 반환한다.
+* 에러 값은 프로그래밍 로직의 일부로 검사해야만 한다.
+* 공백 식별자(blank identifier) 반환값을 무시한다.
 
 ## Links
 
@@ -16,25 +16,25 @@ http://www.goinggo.net/2013/10/functions-and-naked-returns-in-go.html
 
 http://www.goinggo.net/2013/06/understanding-defer-panic-and-recover.html
 
-## Code Review
+## 코드 리뷰
 
-[Return multiple values](example1/example1.go) ([Go Playground](http://play.golang.org/p/bYY-TRjfH0))
+[여러 값 반환하기(Return multiple values)](example1/example1.go) ([Go Playground](http://play.golang.org/p/bYY-TRjfH0))
 
-[Blank identifier](example2/example2.go) ([Go Playground](http://play.golang.org/p/wPVvgwPlHw))
+[공백 식별자(Blank identifier)](example2/example2.go) ([Go Playground](http://play.golang.org/p/wPVvgwPlHw))
 
-[Redeclarations](example3/example3.go) ([Go Playground](http://play.golang.org/p/XQS-twjrtl))
+[재선언(Redeclarations)](example3/example3.go) ([Go Playground](http://play.golang.org/p/XQS-twjrtl))
 
-## Advanced Code Review
+## 고급 코드 리뷰
 
 [Trapping panics](advanced/example1/example1.go) ([Go Playground](http://play.golang.org/p/eg14ClW4_y))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A** Declare a struct type to maintain information about a user. Declare a function that creates value of and returns pointers of this type and an error value. Call this function from main and display the value.
+**Part A** 사용자에 대한 정보를 가지는 구조체 타입을 선언하라. 값을 생성하고 이 타입의 포인터와 에러 값을 반환하는 함수 선언하라. main에서 이 함수를 호출하고 값을 출력하라.
 
-**Part B** Make a second call to your function but this time ignore the value and just test the error value.
+**Part B** 작성한 함수의 2번째 호출을 만든다. 이번에는 에러 값은 무시하고 에러 값을 테스트한다.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/p0vlsW5sVL)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/fSjQ3caTy1))

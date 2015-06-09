@@ -1,26 +1,26 @@
-## Arrays - Arrays, Slices and Maps
+## 배열(Arrays) - 배열, 슬라이스, Maps(Arrays, Slices and Maps)
 
-Arrays are a special data structure in Go that allow us to allocate contiguous blocks of fixed size memory. Arrays have some special features in Go related to how they are declared and viewed as types.
+Go에서 배열은 특수한 자료구조이다. 고정 사이즈의 메모리 블록을 연속으로 할당받는다. 어떻게 선언하고 타입으로 사용되는 특징이 있다.
 
 ## Notes
 
-* Arrays are fixed length data structures that can't change.
-* Arrays of different sizes are considered to be of different types.
-* Memory is allocated as a contiguous block.
+* 변경이 불가능한 고정 사이즈 자료구조이다.
+* 사이즈가 다르면 다른 타입으로 간주한다.
+* 메모리는 연속된 블록으로 할당된다.
 
-## Code Review
+## 코드 리뷰
 
 [Declare, initalize and iterate](example1/example1.go) ([Go Playground](https://play.golang.org/p/DGr8Zp9L_w))
 
-[Different type arrays](example2/example2.go) ([Go Playground](http://play.golang.org/p/LVD43cYBNS))
+[다른 타입 배열(Different type arrays)](example2/example2.go) ([Go Playground](http://play.golang.org/p/LVD43cYBNS))
 
-[Contiguous memory allocations](example3/example3.go) ([Go Playground](https://play.golang.org/p/s4BSgxz0Y3))
+[연속된 메모리 할당(Contiguous memory allocations_](example3/example3.go) ([Go Playground](https://play.golang.org/p/s4BSgxz0Y3))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-Declare an array of 5 strings with each element initialized to its zero value. Declare a second array of 5 strings and initialize this array with literal string values. Assign the second array to the first and display the results of the first array.
+5개 string의 배열을 선언하는데 각 요소는 zero value로 초기화한다. 2번째 배열은 5개 string으로 literal string 값으로 초기화한다. 2번째 배열을 첫번째 배열에 할당하고 첫번째 배열의 결과를 출력한다.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/ggjjRPzhAB)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/Pa3mrTCcpB))
