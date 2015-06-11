@@ -1,16 +1,16 @@
-## Standard Library
+## 표준 라이브러리(Standard Library)
 
-The Go standard library is a set of core packages that enhance and extend the language. These packages add to the number of different types of programs you an write without the need to build your own packages or download packages others have published. Since these packages are tied to the language, they come with some special guarantees that make the standard library special and something you want to leverage as much as possible.
+Go 표준 라이브러리는 언어를 확장하는 핵심 패키지의 집합이다.이 패키지는 다른 사람이 작성한 코드를 다운받거나 우리 코드를 빌드할 필요없이 다양한 타입에 추가할 수 있다. 따라서 이 패키지는 언어와 함께 붙어 있다. 동작에 대해서도 보장하는 역할을 한다.
 
-## Guarantees
+## 보장성
 
-* They will always exist for each minor release of the language.
-* They will honor the backwards compatibility promise.
-* They are part of the dev, build and release process for Go.
-* They are maintained and reviewed by Go contributors.
-* They are tested and benchmarked with each new release of the language.
+* 해당언어에서 최소한으로 필요한 것들이다.
+* 하위 호환성을 보장한다.
+* dev, build 그리고 release 프로세스의 일부이다.
+* Go 컨트리뷰터들이 유지보수와 리뷰를 한다.
+* 언어의 각 릴리즈마다 테스트와 벤치마킹이 이뤄진다.
 
-## Package Review
+## 패키지 리뷰
 
 [Logging](../10-standard_library/01-logging/readme.md)
 

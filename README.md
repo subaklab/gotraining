@@ -75,52 +75,24 @@ Go 워크샵을 개최하는데 관심이 있는 분은 연락주세요.
 
 ## Teachers
 
-**William Kennedy** ([@goinggodotnet](https://twitter.com/goinggodotnet))  
-_Bill is a manaing partner at Ardan Studios in Miami, FL, a mobile, web and systems development company. He is also the co-author of the book Go In Action, the author of the blog GoingGo.Net and the organizer for the Go and MongoDB meetups in Miami._
+**신제용** ([@jeyong](https://twitter.com/jeyong))  
+_subak.io에서 엠베디드 SW를 개발한다. 2009년 마소에 Go언어 소개 기사를 시작으로 회사에서 교육과 커뮤니티에서 Go와 관련된 지식을 전파하는 노력을 하고 있다._
 
-**Kevin Gillette** ([@kevingillette](https://twitter.com/kevingillette))  
-_Kevin is an experienced software engineer that has been enthusiastically using Go since 2012 to develop efficient, high-reliability backend systems. With a focus on breadth of knowledge, Kevin has expertise in a variety of languages and platforms, a firm grounding in theory, as well as a keen interest in computing history._
-
-**Cory LaNou** ([@corylanou](https://twitter.com/corylanou))  
-_Cory LaNou is a full stack web developer and entrepreneur with over 17 years of experience. After 11 years of being a successful serial entrepreneur, he has joined the InfluxDB team, working on building an open source time series database, written in Go. He is active in the Go community, leading the Denver Gophers meetup, as well as mentoring students in his free time._
-
-**Mark Bates** ([@markbates](https://twitter.com/markbates))  
-_Mark Bates is the founder and chief architect of the Boston, MA based consulting company, Meta42 Labs. Mark spends his days focusing on new application development and consulting for his clients. At night he writes books, raises kids, and occasionally he forms a band and "tries to make it". Mark is the author of three books, "Distributed Programming with Ruby" (2009), "Programming in CoffeeScript" (2012), and "Conquering the Command Line" (2014). He also runs the weekly Golang screencast site, www.metacasts.tv._
-
-**Jeremy Saenz** ([@codegansta](https://twitter.com/codegangsta))
-_Jeremy AKA @codegangsta is a fellow Gopher, author, speaker and screencaster. You have probably heard about one of his open source projects like Martini, Negroni, Gin, CLI and others. Jeremy is also the voice behind GopherCasts.io and loves teaching people about technology through his programming screencasts._
+**박동희** ([@donghee](https://twitter.com/donghee))  
+_subak.io에서 HW와 SW를 개발한다. LG전자 등에서 HW개발자와 SW개발자를 위한 워크샵 및 교육을 하고 있다. Go언어 프로그래밍 모델을 임베디드 프로그래밍 모델에 적용하는 방법을 고민하고 있다._
 
 ## Testimonials
 
-ACL Services ([@ACLServices](https://twitter.com/ACLServices))  
-_"I'd just like to thank you again for just a phenomenal training session. The feedback from everyone was overwhelmingly positive. You probably could tell first hand that there were skeptics at first, but you’ve turned many into golang converts and we are really excited in growing golang adoption internally.”_
-
-Joshua Shuster ([@naysaier](https://twitter.com/naysaier))  
-_"I would consider Ardan Studio’s 3 day course to be invaluable. Bill and his staff, being some of the foremost authorities in the Go language, were able to make many of the complex go topics understandable. Covering everything from memory management, all the way up to building concurrency programs and web API's. It has given me the knowledge to write idiomatic Go, and make the best use of it’s features. I would highly their courses to anyone new to Go, or to anyone wanting to widen their existing knowledge."_
-
-Neeru Dwivedi  
-_"I attended the one day workshop by Bill Kennedy from Ardan Labs. I was in for a surprise as before the workshop I was concerned whether I would understand concepts and whether I would be able to follow along. Bill has this wonderful way of explaining concepts and his knowledge on the concepts is so good that, I didn’t feel that I was learning something new & complicated. The Go Workshop got me started on the Go language. This workshop is perfect for beginners and anyone who wants to learn more about Go. I highly recommend this."_
-
-Todd Rafferty ([@webrat](https://twitter.com/webrat))  
-_"I highly recommend William Kennedy / Ardan Lab for Go Training. William is extremely passionate about the Go language and his energy feeds into his training. Very professional, very informative. My favorite section of his training, if I had to pick, was the segment on MultiWriters. I highly recommend a 3 day course, over a 2 day course. Even after the classes were over, William was always responsive with additional questions via various social media channels."_
-
-Georgi Knox ([@GeorgiCodes](https://twitter.com/georgicodes))  
-_"The Intro to Go Workshop enabled me to come into class with very little knowledge of Go and leave having a firm grasp of the key concepts of the language. Each topic was followed up with hands-on coding problems which helped to solidify what I was learning. My teacher Bill was not only approachable, but very excited about the language and his enthusiasm was contagious. I enjoyed that we talked about some of the lower level implementation details of Go which was something that I had found lacking from some books on the language. Overall I would highly recommend this workshop to anyone looking to learn Go quickly and effectively."_
-
-Jackie Heitzer ([@JackieHeitzer](https://twitter.com/jackieheitzer))  
-_"Great course and a perfect introduction to Go.  Bill is very friendly and extremely knowledgeable about the Go language and I am excited to speak with him about Go in the future.  The training had an excellent format with hands on coding examples.  After the class I feel as though I have a better understanding of the key concepts, especially how pointers work.  I highly recommend this course to anyone interested in learning more about Go."_
 
 ## Partners
 
-[Venture Hive](http://venturehive.com/) | [SendGrid](http://sendgrid.com) | [Iron.io](http://iron.io) | [Galvanize](http://galvanize.com) | [MonogoDB](http://monogdb.com) | [InfluxDB](http://influxdb.com/)
+[subak.io](http://subak.io)
 
 ## Contact Information
 
-William Kennedy  
-Ardan Studios  
-12973 SW 112 ST, Suite 153  
-Miami, FL 33186  
-bill@ardanstudios.com
+신제용(Jeyong Shin)
+Seoul & Shenzhen
+jeyong@subak.io
 
 ___
 [![Ardan Labs](00-slides/images/ggt_logo.png)](http://www.ardanlabs.com)

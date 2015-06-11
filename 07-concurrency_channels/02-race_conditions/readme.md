@@ -35,7 +35,7 @@ https://golang.org/doc/articles/race_detector.html
 ## 연습문제
 
 ### 문제 1
-Given the following program, use the race detector to find and correct the race condition.
+다음 문제가 주어졌을 때, 레이스 상태를 찾고 바로잡기 위한 레이스 디텍터(race detector)를 사용하라.
 
 	// https://play.golang.org/p/lNXhQJ8gz4
 

@@ -1,8 +1,8 @@
-## Testing and Debugging
+## 테스팅과 디버깅(Testing and Debugging)
 
-Go has support for both testing and debugging. This includes profiling and benchmarking Go programs.
+Go는 테스팅과 디버깅 모두를 제공한다. Go 프로그램을 프로파일링하고 벤치마킹하는 것을 포함한다.
 
-## Package Review
+## 패키지 리뷰
 
 [Testing](../09-testing/01-testing/readme.md)
 
@@ -14,10 +14,10 @@ Go has support for both testing and debugging. This includes profiling and bench
 
 [Profiling](../09-testing/05-profiling/readme.md)
 
-## Exercises
+## 연습문제
 
-### Exercise 1
-Write three benchmark tests for converting an integer into a string. First use the fmt.Sprintf function, then the strconv.FormatInt function and finally the strconv.Itoa. Identify which function performs the best.
+### 문제 1
+정수형을 문자열로 변환하는 3가지 벤치마킹 테스트를 작성하라. 먼저 fmt.Sprintf 함수를 사용하고 다음으로 strconv.FormatInt 함수를 마지막으로 strconv.Itoa를 사용하라. 어떤 함수가 성능이 좋은지를 알아보라.
 
 [Template](exercises/template1/bench_test.go) | 
 [Answer](exercises/exercise1/bench_test.go)

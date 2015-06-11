@@ -1,16 +1,17 @@
-## Channels - Concurrency and Channels
-Channels are a reference type that provide a safe mechanism to share data between goroutines. Unbuffered channel give a guarantee of delivery that data has passed from one goroutine to the other. Buffered channels allow for data to pass through the channel without such guarantees. Unbuffered channels require both a sending and receiving goroutine to be ready at the same instant before any send or receive operation can complete. Buffered channels don't force goroutines to be ready at the same instant to perform sends and receives.
+## 채널(Channels) - 동시성과 채널(Concurrency and Channels)
+
+goroutine 사이에서 data를 안전하게 공유하기 위한 방법을 제공하느 참조 타입이다. unbuffered 채널은 goroutine에서 다른 goroutine으로 data를 안전하게 전달하는 것을 보장한다. buffered 채널은 이런 보장 없이도 채널을 통해서 data를 전달할 수 있다. send/receive 동작이 완료되기 전에 unbuffered 채널은 sending/receiving goroutine이 필요하다. buffered 채널은 goroutine이 send/receive를 수행하기 위해 동일 인스턴스에 준비하고 있을 필요가 없다.
 
 ## Notes
 
-* Unbuffered channels provide a guarentee that data has been exchanged at some instant.
-* Buffered channels provide great support for managing goroutines and resources.
-* Closed channels can provide a system wide mechanism for notifications.
-* A send on an unbuffered channel happens before the corresponding receive from that channel completes.
-* A receive from an unbuffered channel happens before the send on that channel completes.
-* The closing of a channel happens before a receive that returns a zero value because the channel is closed.
+* unbuffered 채널은 어떤 인스턴스에서 data가 교환이 이뤄지는 것을 보장한다.
+* buffered 채널은 goroutine과 리소스를 관리를 돕는다.
+* 닫힌 채널은 시스템에서 통보하는 역할을 한다.
+* unbuffered 채널에서 send는 해당 채널의 receive 전에 일어난다.
+* unbuffered 채널에서 receive는 채널이 완료되는 send 전에 발생한다.
+* 채널을 closing은 채널이 닫혀서 zero value를 반환하는 receive 전에 발생한다.
 
-## Documentation
+## 문서
 
 [Channel Diagrams](documentation/channels.md)
 
@@ -20,7 +21,7 @@ http://blog.golang.org/share-memory-by-communicating
 
 http://www.goinggo.net/2014/02/the-nature-of-channels-in-go.html
 
-## Code Review
+## 코드 리뷰
 
 [Unbuffered channels - Tennis game](example1/example1.go) ([Go Playground](http://play.golang.org/p/7WO_eOJx_G))
 
@@ -30,16 +31,16 @@ http://www.goinggo.net/2014/02/the-nature-of-channels-in-go.html
 
 [Timer channels and Select](example4/example4.go) ([Go Playground](http://play.golang.org/p/KuMG3o_7-C))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
-Write a program where two goroutines pass an integer back and forth ten times. Display when each goroutine receives the integer. Increment the integer with each pass. Once the integer equals ten, terminate the program cleanly.
+### 문제 1
+2개 goroutine이 10번에 걸쳐 정수를 주고받는 프로그램을 작성하라. 각 goroutine이 정수를 받는 것을 출력하라. 각 전달에서 정수를 증가시켜라. 일단 정수가 10이 되면 프로그램을 종료시켜라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/G7O-DnJrEA)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/v7fEyd86i3))
 
-### Exercise 2
-Write a program that uses a buffered channel to maintain a buffer of four strings. In main, send the strings 'A', 'B', 'C' and 'D' into the channel. Then create 20 goroutines that receive a string from the channel, display the value and then send the string back into the channel. Once each goroutine is done performing that task, allow the goroutine to terminate.
+### 문제 2
+4개 string의 버퍼를 유지하기 위해 buffered 채널을 사용하는 프로그램을 작성하라. main에서 string 'A', 'B', 'C' 그리고 'D'를 채널로 보내라. 다음으로 20개 goroutine을 생성해서 채널로부터 하나의 string을 받고 값을 출력하라. 그리고 string을 채널로 돌려보내라. 일단 각 goroutine이 이 일을 완료하면 goroutine이 종료되도록 한다.
 
 [Template](exercises/template2/template2.go) ([Go Playground](http://play.golang.org/p/vc6c1-M2EB)) | 
 [Answer](exercises/exercise2/exercise2.go) ([Go Playground](http://play.golang.org/p/K9gNyTRA0s))
