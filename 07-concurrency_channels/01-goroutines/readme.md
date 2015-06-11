@@ -1,17 +1,17 @@
-## Goroutines - Concurrency and Channels
+## Goroutines - 동시성과 채널(Concurrency and Channels)
 
-Goroutines are functions that are created and scheduled to be run indenpently. Goroutines are multiplexed against a shared thread that is own by context. The scheduler is responsible for the management and execution of goroutines.
+Goroutine은 독립적으로 실행되도록 만든 함수이다. 공유 쓰레드에서 멀티플렉스로 동작한다. 스케쥴러는 goroutine의 관리와 실행을 책임진다.
 
 ## Notes
 
-* Goroutines are functions that are scheduled to run independently.
-* The scheduler uses a context that owns an OS thread and goroutine run queue.
-* We must always maintain an account of running goroutines and shutdown cleanly.
-* Concurrency is not parallelism.
-	* Concurrency is about dealing with lots of things at once.
-	* Parallelism is about doing lots of things at once.
+* goroutine은 독립적으로 실행되도록 스케줄된 함수이다.
+* 스케쥴러는 OS 쓰레드를 가지는 컨텍스를 사용하고 goroutine은 큐를 실행한다.
+* goroutine을 account를 유지해야하고 깔끔하게 종료한다.
+* 동시성은 병렬성과 다르다.
+	* 동시성은 한 번에 여러가지를 처리하는 것에 관한 것이다.Concurrency is about dealing with lots of things at once.
+	* 병렬성은 한 번에 여러가지를 하는 것에 관한 것이다.
 
-## Documentation
+## 문서
 
 [Scheduler Diagrams](documentation/scheduler.md)
 
@@ -35,13 +35,13 @@ http://www.goinggo.net/2014/01/concurrency-goroutines-and-gomaxprocs.html
 
 [Goroutines and parallelism](example3/example3.go) ([Go Playground](http://play.golang.org/p/cqsHoPD30n))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-**Part A** Create a program that declares two anonymous functions. Once that counts up to 100 from 0 and one that counts down to 0 from 100. Display each number with an unique identifier for each goroutine. Then create goroutines from these functions and don't let main return until the goroutines complete.
+**Part A** 2개의 익명 함수를 선언하는 프로그램을 생성하라. 하나는 0에서 100까지 카운트하고 다른 하나는 100에서 0까지 카운트한다. 각 goroutine에 대해서 고유식별자를 가지고 각 숫자를 출력한다. 다음으로 이 함수로부터 goroutine을 생성하고 main이 goroutine을 완성할 때까지 반환하지 않게 한다.
 
-**Part B** Run the program in parallel.
+**Part B** 병렬로 프로그램을 실행하라.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/H-h1cbBW3B)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/mB4QslSNoA))

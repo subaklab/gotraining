@@ -1,12 +1,12 @@
-## Race Conditions - Concurrency and Channels
+## 레이스 조건(Race Conditions) - 동시성과 채널(Concurrency and Channels)
 
-A race condition is when two or more goroutines attempt to read and write to the same resource at the same time. Race conditions can create bugs that totally appear random or can be never surface as they corrupt data. Atomic functions and mutexes are a way to synchronize the access of shared resources between goroutines.
+레이스 조건은 2개 이상 goroutine이 동시에 동일한 리소스에 읽고 쓰기를 할 때를 말한다. 통제가 불가능하게 발생하는 버그를 발생시키거나 data를 망가트리는 것과 같이 드러나지 않는다. atomic 함수와 뮤텍스(mutexes)는 goroutine 사이에서 공유 자원의 접근을 동기화 시키는 방식이다.
 
 ## Notes
 
-* Goroutines need to be coordinated and synchronized.
-* When two or more goroutines attempt to access the same resource, we have a race condition.
-* Atomic functions and mutexes can provide the support we need.
+* goroutine은 조정하고 동기화가 필요하다.
+* 2개 이상 goroutine이 동일한 자원에 접근하려고 할 때, 레이스 조건이 된다.
+* atomic 함수와 뮤텍스 지원이 필요하다.
 
 ## Links
 
@@ -16,11 +16,11 @@ http://www.goinggo.net/2013/09/detecting-race-conditions-with-go.html
 
 https://golang.org/doc/articles/race_detector.html
 
-## Documentation
+## 문서
 
 [Race Condition Diagram](documentation/race_condition.md)
 
-## Code Review
+## 코드 리뷰
 
 [Race Condition](example1/example1.go) ([Go Playground](https://play.golang.org/p/dMHhzuM-TM))
 
@@ -32,9 +32,9 @@ https://golang.org/doc/articles/race_detector.html
 
 [Read/Write Mutex](example5/example5.go) ([Go Playground](https://play.golang.org/p/p9V1R-_1T2))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 Given the following program, use the race detector to find and correct the race condition.
 
 	// https://play.golang.org/p/lNXhQJ8gz4

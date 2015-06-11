@@ -1,15 +1,15 @@
-## Using Pointers
+## 포인터 사용하기
 
-When creating a new type, try to answer this question before declaring methods. Does adding or removing something from a value of this type need to create a new value or mutate the existing one. If the answer is create a new value, then use value receivers, else use pointer receivers; and be consistent. This also applies to how values of this type should be passed to other parts of your program. Either, always use a value or a pointer, don’t mix it up. There are few exceptions to the rule.
+새로운 타입을 만들 때,메소드를 선언하기 전에 아래 질문에 대해서 생각해보라. 이 타입의 값으로부터 어떤 것을 추가하거나 제거하는 것이 새로운 값을 생성하거나 기존 것을 변형시킬 필요가 있는가? 만약 답변이 새로운 값을 생성해야한다는 것이라면 value receiver를 사용하라. 그렇지 않으면 pointer receiver를 사용하라. 이것은 이 타입의 값이 프로그램의 다른 부분으로 어떻게 전달해야만 하는지에도 적용된다. 항상 값 혹은 포인터를 선택해서 사용해야하고 섞어서 사용하지 말자. 여기에는 몇 가지 예외가 있다.
 
 ## Notes
 
-* The nature of the type should determine how it is passed.
-* Types can implement primitive and non-primitive data qualities.
-* Don't declare structs with a duality of nature.
-* In general, don’t pass built-in type values with a pointer.
-* In general, don’t pass reference type values with a pointer unless you are implementing unmarshal type of functionality.
-* In general, pass struct type values with a pointer unless the struct type has been implemented to behave like a primitive data value.
+* 타입의 속성이 어떻게 전달하느냐를 결정한다.
+* 타입은 primitive와 non-primitive data qualities를 구현할 수 있다.
+* 두가지 속성을 가지는 구조체를 선언하지마라.
+* 일반적으로 포인터를 가지는 빌트인 타입 값을 전달하지마라.
+* 일반적으로 기능의 unmarshal 타입을 구현하지 않는다면 포인터를 가지는 참조 타입 값을 전달하지마라.
+* 일반적으로 구조체 타입이 prmitive data 값처럼 동작하지 않는다면 포인터를 가지는 구조체 타입 값을 전달해라.
 
 ## Links
 
@@ -17,7 +17,7 @@ http://www.goinggo.net/2014/12/using-pointers-in-go.html
 
 http://play.golang.org/p/ki991PuHhk
 
-## Code Review
+## 코드 리뷰
 
 [Primitive Types](example1/example1.go) ([Go Playground](https://play.golang.org/p/H5HRoElN6q))
 
@@ -25,12 +25,11 @@ http://play.golang.org/p/ki991PuHhk
 
 [Reference Types](example3/example3.go) ([Go Playground](https://play.golang.org/p/E-Bb5cRuyz))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-Declare a struct type named Point with two fields, X and Y of type float64. Implement a factory function for this type and a method
-that accept a value of this type and calculates the distance between the two points. What is the nature of this type?
+float64 타입의 X와 Y 필드를 가지는 Point 구조체를 선언한다. 이 타입과 메소드를 위해 facotry 함수를 구현하며 이 메소드는 타입의 값을 받어서 2 point들 사이의 거리를 계산한다. 이 타입의 속성은 무엇일까?
 
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/9_MSdcdlNQ)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/5KL4HipSJ-))
