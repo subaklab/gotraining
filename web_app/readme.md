@@ -1,12 +1,12 @@
-## Search Engine Application
+## 검색 엔진 어플리케이션
 
-To see Go in action we are going to build a complete Go program. The program implements functionality that can be found in many Go programs being developed today. The program provides a sample to the html package to create a simple search engine. The engine supports Google, Bing and Blekko searches. You can request results for all three engines or ask for just the first result. Searches are performed concurrently. Use the GOMAXPROCS environment variables to run the searches in parallel.
+Go가 동작하는 것을 보기 위해서 완전한 Go 프로그램을 만들어 보겠습니다. 오늘 개발할 프로그램은 다양한 Go프로그램에서 찾아볼 수 있는 기능 구현입니다. 이 프로그램은 단순한 검색엔진을 생성하기 위해서 html 패키지에 대한 예제를 제공합니다. 엔진은 Google, Bing과 Blekko 검색을 지원합니다. 이 3개 검색 엔진 모두에게 겨로가를 요청할 수 있습니다. 혹은 첫번째 결과만 요청할 수도 있습니다. 검색은 동시성을 지원합니다. GOMAXPROCS 환경 변수를 사용해서 병렬로 검색을 실행합니다.  
 
-## Program Architecture
+## 프로그램 구조
 
 ![Image of App.](client_image.png)
 
-The program is broken into several distinct steps that run across different goroutines. We will explore the code as it flows from the main goroutine into the searching goroutines and then back to the main goroutine. To start, let's review the structure of the project:
+이 프로그램은 다른 goroutine들 사이에서 실행되는 여러 독립적인 단계로 나눠집니다. main goroutine에서 검색 goroutines로 그리고 다시 main goroutine 흐름으로 코드를 살펴볼 것입니다. 시작에 앞서 프로젝트의 구조를 알아봅시다.
 
 *cd $GOPATH/src/github.com/ArdanStudios/web_app/sample*
 
@@ -31,7 +31,7 @@ The program is broken into several distinct steps that run across different goro
 		* [results.html](sample/views/resuls.html)-- HTML for rendering the search results
 	* [main.go](sample/main.go) -- Programs entry point
 
-The code is organized within two packages. The service package handles the processing of HTTP requests and responses. HTML templates are used to render the views. The search package handles the processing of searches agains the different search engines. An interface called Searcher is declared to support the implementation of new Searchers.
+이 코드는 2개의 패키지로 구성되어 있습니다. service 패키지는 HTTP request과 response의 처리를 다룹니다. HTML template는 view를 렌더링하는데 사용합니다. search 패키지는 각기 다른 검색 엔진의 검색 과정을 다룹니다. Searcher interface는 새 Searcher의 구현하도록 선언합니다.
 
 ___
 [![Ardan Labs](../00-slides/images/ggt_logo.png)](http://www.ardanlabs.com)
