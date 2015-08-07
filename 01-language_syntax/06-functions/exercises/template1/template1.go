@@ -3,30 +3,29 @@
 
 // http://play.golang.org/p/p0vlsW5sVL
 
-// Declare a struct type to maintain information about a user. Declare a function
-// that creates value of and returns pointers of this type and an error value. Call
-// this function from main and display the value.
+// user 정보를 위해 struct type을 선언
+// 이 타입의 값을 생성해서 그 포인터와 error 값을 반환하는 함수 선언
+// main에서 이 함수를 호출하고 값을 출력
 //
-// Make a second call to your function but this time ignore the value and just test
-// the error value.
+// 2번째 호출에서는 인자 값을 무시하고 error 값을 테스트
+
 package main
 
-// Add imports.
+// import 추가
 
-// Declare a type named user.
+// user 타입 선언
 
-// Declare a function that creates user type values and returns a pointer
-// to that value and an error value of nil.
-func funcName() /* (pointer return arg, error return arg) */ {
-	// Create a value of type user and return the proper values.
+// user 타입 값을 생성하고 그 포인터를 반환하며 error 값은 nil인 함수 선언
+func funcName() /* (포인터 반환, error 반환) */ {
+	// user 타입 값을 생성하고 적절한 값을 반환
 }
 
 // main is the entry point for the application.
 func main() {
-	// Use the function to create a value of type user. Check
-	// the error being returned.
+	// 함수 이용해서 user 타입 값 생성
+	// 반환되는 error 체크
 
-	// Display the value that the pointer points to.
+	// 포인터가 가리키는 값을 출력
 
-	// Call the function again and just check the error.
+	// 다시 함수를 호출하고 error를 체크
 }

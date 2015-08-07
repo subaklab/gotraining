@@ -3,23 +3,22 @@
 
 // http://play.golang.org/p/kzZZ24O23g
 
-// Declare an untyped and typed constant and display their values.
+// untyped와 typed 상수를 선언하고 이 값을 출력
 //
-// Multiply two literal constants into a typed variable and display the value.
+// 2개 literal 상수를 곱해서 타입 변수에 대입하고 값을 출력
 package main
 
-// Add imports.
+// import 추가
 
-// Declare a constant of kind string and assign a value.
+// string 선언하고 값을 할당
 
-// Declare a constant of type integer and assign a value.
+// int 타입의 상수를 선언하고 값을 할당
 
 // main is the entry point for the application.
 func main() {
-	// Display the value of both constants.
+	// 두 상수의 값을 출력
 
-	// Divide a constant of kind integer and kind floating point and
-	// assign the result to a variable.
+	// int 상수를 float 상수로 나누고 그 결과를 변수에 할당
 
-	// Display the value of the variable.
+	// 변수의 값을 출력
 }

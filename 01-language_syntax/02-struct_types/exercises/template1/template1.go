@@ -3,23 +3,23 @@
 
 // http://play.golang.org/p/ItPe2EEy9X
 
-// Declare a struct type to maintain information about a user (name, email and age).
-// Create a value of this type, initalize with values and display each field.
+// struct 타입 선언 : user(name, email, age)
+// 만든 타입으로 값을 생성 후 초기화하고 각 필드를 출력
 //
-// Declare and initialize an anonymous struct type with the same three fields. Display the value.
+// 동일한 3개 필드를 가지는 익명 struct 타입을 선언하고 초기화. 값을 출력
 package main
 
-// Add imports.
+// import 추가
 
-// Add user type and provide comment.
+// user type 추가하고 코멘트 제공
 
 // main is the entry point for the application.
 func main() {
-	// Declare variable of type user and init using a struct literal.
+	// 타입 user의 변수선언하고 구조체 literal을 이용해서 초기화
 
-	// Display the field values.
+	// 필드 값을 출력
 
-	// Declare a variable using an anonymous struct.
+	// 익명 struct사용해서 변수 선언
 
-	// Display the field values.
+	// 필드 값을 출력
 }

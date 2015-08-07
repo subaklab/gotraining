@@ -3,28 +3,27 @@
 
 // http://play.golang.org/p/b6-FNFOToO
 
-// Declare a struct type and create a value of this type. Declare a function
-// that can change the value of some field in this struct type. Display the
-// value before and after the call to your function.
+// struct 타입 선언하고 이 타압의 값을 생성
+// struct 타입내부 필드의 값을 변경하는 함수 선언
+// 함수를 호출하기 전과 후의 값을 출력
 package main
 
-// Add imports.
+// import 추가
 
-// Declare a type named user.
+// user 타입 선언
 
-// Create a function that changes the value of one of the user fields.
-func funcName( /* add pointer parameter, add value parameter */ ) {
-	// Use the pointer to change the value that the
-	// pointer points to.
+// user 필드 중에 하나의 값을 변경하는 함수 생성
+func funcName( /* 포인터 인자 추가, 값 인자 추가 */ ) {
+	// 포인터를 사용해서 포인터가 가리키는 값을 변경
 }
 
 // main is the entry point for the application.
 func main() {
-	// Create a variable of type user and initialize each field.
+	// user 타입의 변수 선언하고 각 필드를 초기화
 
-	// Display the value of the variable.
+	// 변수의 값을 출력
 
-	// Share the variable with the function you declared above.
+	// 변수를 위에서 선언한 함수를 이용하
 
-	// Display the value of the variable.
+	// 변수의 값을 출력
 }

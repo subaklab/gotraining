@@ -3,25 +3,24 @@
 
 // http://play.golang.org/p/asM7GXfJNk
 
-// Declare and initalize a variable of type int with the value of 20. Display
-// the _address of_ and _value of_ the variable.
+// int 타입의 변수를 선언하고 20 값으로 초기화
+// 변수의 주소(address of)와 값(value of)을 출력
 //
-// Declare and initialize a pointer variable of type int that points to the last
-// variable you just created. Display the _address of_ , _value of_ and the
-// _value that the pointer points to_.
+// int 타입의 변수에 포인터를 선언
+// 마지막에 생성한 변수에 대한 포인터
+// 포인터가 가리키는 주소와 값을 출력한다.
 package main
 
-// Add imports.
+// import 추가
 
 // main is the entry point for the application.
 func main() {
-	// Declare an integer variable with the value of 20.
+	// int 변수를 선언하고 값은 20
 
-	// Display the address of and value of the variable.
+	// 변수의 주소와 값을 출력
 
-	// Declare a pointer variable of type int. Assign the
-	// address of the integer variable above.
+	// int 타입의 포인터 변수 선언
+	// 위 int 변수의 주소를 할당
 
-	// Display the address of, value of and the value the pointer
-	// points to.
+	// 포인터가 가리키는 값의 주소와 값을 출력
 }

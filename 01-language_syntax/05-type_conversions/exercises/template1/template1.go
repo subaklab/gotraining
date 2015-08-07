@@ -3,31 +3,30 @@
 
 // http://play.golang.org/p/Eg9m_rYm4V
 
-// Declare a named type called counter with a base type of int. Declare and initalize
-// a variable of this named type to its zero value. Display the value of this variable
-// and the variables type.
+// int를 기반한 counter라는 이름 type을 선언
+// 변수 하나 선언하고 zero value로 초기화
+// 이 변수의 값과 타입을 출력
 //
-// Declare a new variable of the named type assign it the value of 10. Display the value.
+// 새로운 변수를 선언하고 10을 할당
+// 값을 출력
 //
-// Declare a variable of the same base type as your named typed. Attempt to assign the
-// value of your named type variable to your new base type variable. Does the compiler
-// allow the assignment?
+// base type으로 변수를 선언
+// base type에 이전 변수를 할당하기
+// 이때 컴파일러의 동작은?
 package main
 
-// Add imports.
+// import 추가
 
-// Declare the counter named type with a base type of int.
+// int를 기본 타입으로 하는 counter 타입을 선언
 
 func main() {
-	// Declare and display the variable of the named type
-	// to its zero value.
+	// 만든 타입으로 변수를 선언하고 zero value 출력
 
-	// Declare and display the variable of the named type
-	// to the value of 10.
+	// 만든 타입으로 변수를 선언하고 여기에 10을 할당
 
-	// Declare a variable of type int initialized to 1.
+	// int 타입의 변수를 선언하고 1로 초기화
 
-	// Assign this new variable to one of the named variables.
+	// 새로운 변수를 위에 만든 변수 중에 하나에 대입
 
-	// Did you get a compiler error on the above assignment?
+	// 위에 할당문엔서 컴파일러 에러가 발생했는가?
 }
