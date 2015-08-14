@@ -68,6 +68,8 @@ Go 워크샵을 개최하는데 관심이 있는 분은 연락주세요.
 
 [Chicago, IL : September TDB](https://www.eventbrite.com/e/go-programming-bootcamp-tour-chicago-september-exact-dates-tbd-tickets-15559453745)
 
+[Seoul, Korea : September 12th]
+
 **Conferences:**  
 [MagmaConf : June 16th](http://magmaconf.com/)  
 [Gophercon : July 7th](http://gophercon.com/)  
