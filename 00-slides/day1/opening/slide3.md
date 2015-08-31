@@ -20,7 +20,7 @@
 </table>
 
 ### 표준 라이브러리
-Go 표준 라이브러리는 제3자가 제공하는 패키지 없이도 많은 기능을 가지고 있다. 아래 링크를 직접 확인하기 바람. [Standard Library](http://golang.org/pkg/)
+Go 표준 라이브러리는 제3자가 제공하는 패키지 없이도 많은 기능을 가지고 있다. 아래 링크를 직접 확인하기 바랍니다. [Standard Library](http://golang.org/pkg/)
 
 #### [이전 슬라이드](slide2.md) | [다음 슬라이드](slide4.md)
 ___
