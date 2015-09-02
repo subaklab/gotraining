@@ -1,72 +1,65 @@
 // All material is licensed under the GNU Free Documentation License
 // https://github.com/ArdanStudios/gotraining/blob/master/LICENSE
 
-// http://play.golang.org/p/hvVA4zB9Bf
+// https://play.golang.org/p/4uJObo_ItN
 
-// Declare a struct type named animal with two fields name and age. Declare a struct
-// type named dog with the field bark. Embed the animal type into the dog type. Declare
-// and initalize a value of type dog. Display the value of the variable.
-//
-// Declare a method named yelp to the animal type using a pointer reciever which displays the
-// literal string "Not Implemented". Call the method from the value of type dog.
-//
-// Declare an interface named yelper with a single method called yelp. Declare a value of
-// type yelper and assign the address of the value of type dog. Call the method yelp.
-//
-// Implement the yelper interface for the dog type. Be creative with the
-// bark field. Call the method yelp again from the value of type yelper.
+// Copy the code from the template. Declare a new type called hockey
+// which embeds the sports type. Implement the matcher interface for hockey.
+// When implementing the Search method for hockey, call into the Search method
+// for the embedded sport type to check the embedded fields first. Then create
+// two hockey values inside the slice of matchers and perform the search.
 package main
 
 import (
 	"fmt"
+	"strings"
 )
 
-// yelper represents talking animals.
-type yelper interface {
-	yelp()
+// matcher defines the behavior required for performing searches.
+type matcher interface {
+	Search(searchTerm string) bool
 }
 
-// animal represents all animals.
-type animal struct {
-	name string
-	age  int
+// sport represents a sports team.
+type sport struct {
+	team string
+	city string
 }
 
-// yelp represents how an animal can speak.
-func (a *animal) yelp() {
-	fmt.Println("Not Implemented")
+// Search checks the value for the specified term.
+func (s sport) Search(searchTerm string) bool {
+	return strings.Contains(s.team, searchTerm) || strings.Contains(s.city, searchTerm)
 }
 
-// dog represents a dog.
-type dog struct {
-	animal
-	bark int
+// hockey represents specific hockey information.
+type hockey struct {
+	sport
+	country string
 }
 
-// yelp represents how an animal can speak.
-func (d *dog) yelp() {
-	for bark := 0; bark < d.bark; bark++ {
-		fmt.Print("BARK ")
-	}
-	fmt.Println()
+// Search checks the value for the specified term.
+func (h hockey) Search(searchTerm string) bool {
+	return h.sport.Search(searchTerm) || strings.Contains(h.country, searchTerm)
 }
 
 // main is the entry point for the application.
 func main() {
-	// Create a value of type dog.
-	d := dog{
-		animal: animal{
-			name: "Chole",
-			age:  1,
-		},
-		bark: 10,
+	// Define the term to search.
+	searchTerm := "Miami"
+
+	// Create a slice of matcher values to search.
+	matchers := []matcher{
+		hockey{sport{"Panthers", "Miami"}, "USA"},
+		hockey{sport{"Canadians", "Montreal"}, "Canada"},
 	}
 
-	// Display the value.
-	fmt.Println(d)
+	// Display what we are searching for.
+	fmt.Println("Searching For:", searchTerm)
 
-	// Use the interface.
-	var y yelper
-	y = &d
-	y.yelp()
+	// Range of each matcher value and check the search term.
+	for _, m := range matchers {
+		if m.Search(searchTerm) {
+			fmt.Printf("FOUND: %+v", m)
+		}
+	}
 }

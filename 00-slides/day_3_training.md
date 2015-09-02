@@ -4,19 +4,19 @@
 *Note: 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드에 코멘트가 있지만 일부 빠진 부분은 수업에서 다룰 예정입니다.*
 
 #### 동시성 패턴(Concurrency Patterns)
-[Concurrency Patterns](../08-concurrency_patterns/readme.md)
+[Concurrency Patterns](../09-concurrency_patterns/readme.md)
 
 #### 테스팅, 프리딕션, 고디버깅, 프로파일링(Testing, Prediction, Godebug and Profiling)
-[Testing and Debugging](../09-testing/readme.md)  
+[Testing and Debugging](../10-testing/readme.md)  
 
 #### 로깅, 인코딩 그리고 IO(Logging, Encoding and IO)
-[Standard Library](../10-standard_library/readme.md)
+[Standard Library](../11-standard_library/readme.md)
 
 #### 리플렉션(Reflection)
-[Reflection](../11-reflection/readme.md)
+[Reflection](../12-reflection/readme.md)
 
 #### HTTP
-[HTTP](../12-http/readme.md)
+[HTTP](../13-http/readme.md)
 
 ___
 [![Ardan Labs](images/ggt_logo.png)](http://www.ardanlabs.com)

@@ -9,13 +9,16 @@
 #### 포인터(Pointers) 사용
 [Nature Of Types](../05-using_pointers/readme.md)
 
-#### 에러 처리(Error Handling)
-[Error Handling](../06-error_handling/readme.md)
+#### Composition
+[Composition](../06-composition/readme.md)
 
-#### 동시성(Concurrency), 경쟁상태(Race Conditions) 그리고 채널(Channels)
-[Goroutines](../07-concurrency_channels/01-goroutines/readme.md) | 
-[Race Conditions](../07-concurrency_channels/02-race_conditions/readme.md) | 
-[Channels](../07-concurrency_channels/03-channels/readme.md)
+#### 에러 처리(Error Handling)
+[Error Handling](../07-error_handling/readme.md)
+
+#### 동시성(Concurrency), 경쟁상태(Race Conditions) 그리고 채널
+[Goroutines](../08-concurrency_channels/01-goroutines/readme.md) | 
+[Race Conditions](../08-concurrency_channels/02-race_conditions/readme.md) | 
+[Channels](../08-concurrency_channels/03-channels/readme.md)
 
 ___
 [![Ardan Labs](images/ggt_logo.png)](http://www.ardanlabs.com)

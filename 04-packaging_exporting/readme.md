@@ -27,16 +27,14 @@ http://www.goinggo.net/2013/08/organizing-code-to-support-go-get.html
 
 [Unexported struct type fields](example4/example4.go)
 
-[Exported embedded types](example5/example5.go)
-
-[Unexported embedded types](example6/example6.go)
+[Unexported embedded types](example5/example5.go)
 
 ## 연습문제
 
 ### 문제 1
 **Part A** toy라는 이름을 가지는 패키지를 생성한다. 이 패키지는 Toy라는 구조체를 노출한다. 노출된 필드는 Name과 Weight이다. 다음으로 노출하지 않는 2개의 필드 onHand와 sold를 추가한다. New라는 팩토리 함수를 선언해서 toy 타입의 값을 생성하고 노출할 필드를 위해 인자를 받아들인다. 그리고 노출하지 않는 필드에 대해서 값을 수정하고 반환하는 메소드를 선언한다.
 
-**Part B** toy 패키지를 import하는 프로그램을 생성한다. New 함수를 사용해서 toy 파입의 값을 생성한다. 그리고 counts를 설정하기 위해 메소드를 사용하고 해당 toy 값의 필드값을 출력한다.
+**Part B** toy 패키지를 import하는 프로그램을 생성한다. New 함수를 사용해서 toy 타입의 값을 생성한다. 그리고 counts를 설정하기 위해 메소드를 사용하고 해당 toy 값의 필드값을 출력한다.
 
 [Template](exercises/template1) | 
 [Answer](exercises/exercise1)

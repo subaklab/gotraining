@@ -1,48 +1,57 @@
 // All material is licensed under the GNU Free Documentation License
 // https://github.com/ArdanStudios/gotraining/blob/master/LICENSE
 
-// http://play.golang.org/p/a-Nzng_E6Z
+// http://play.golang.org/p/c9Qrsq8QFe
 
-// Declare a struct type named animal with two fields name and age. Declare a struct
-// type named dog with the field bark. Embed the animal type into the dog type. Declare
-// and initalize a value of type dog. Display the value of the variable.
-//
-// Declare a method named yelp to the animal type using a pointer reciever which displays the
-// literal string "Not Implemented". Call the method from the value of type dog.
-//
-// Declare an interface named yelper with a single method called yelp. Declare a value of
-// type yelper and assign the address of the value of type dog. Call the method yelp.
-//
-// Implement the yelper interface for the dog type. Be creative with the
-// bark field. Call the method yelp again from the value of type yelper.
+// Copy the code from the template. Declare a new type called hockey
+// which embeds the sports type. Implement the matcher interface for hockey.
+// When implementing the Search method for hockey, call into the Search method
+// for the embedded sport type to check the embedded fields first. Then create
+// two hockey values inside the slice of matchers and perform the search.
 package main
 
-// Add imports.
+import "strings"
 
-// Declare an interface type named yelper that has a
-// single method called yelp().
+// matcher defines the behavior required for performing searches.
+type matcher interface {
+	Search(searchTerm string) bool
+}
 
-// Declare a struct type named animal with two fields
-// name of type string and age of type in.
+// sport represents a sports team.
+type sport struct {
+	team string
+	city string
+}
 
-// Declare a method for the animal struct that implements
-// the yelper interface using a pointer receiver.
+// Search checks the value for the specified term.
+func (s sport) Search(searchTerm string) bool {
+	if strings.Contains(s.team, searchTerm) ||
+		strings.Contains(s.city, searchTerm) {
+		return true
+	}
 
-// Declare a struct type named dog that embeds the animal
-// type and has a field named bark of type int.
+	return false
+}
 
-// Declare a method for the dog struct that implements
-// the yelper interface using a pointer receiver.
+// Declare a struct type named hockey that represents specific
+// hockey information. Have it embed the sport type first.
+
+// Implement the matcher interface for hockey.
+func ( /* receiver type */ ) Search(searchTerm string) bool {
+	// Make sure you call into Search method for the embedded
+	// sport type.
+
+	// Implement the search for the new fields.
+	return false
+}
 
 // main is the entry point for the application.
 func main() {
-	// Declare and initialize a variable of type dog.
+	// Define the term to search.
 
-	// Display the value of the variable.
+	// Create a slice of matcher values to search.
 
-	// Declare a variable of the yelper interface type.
+	// Display what we are searching for.
 
-	// Assign the dog variable to the interface variable.
-
-	// The call the interface method.
+	// Range of each matcher value and check the search term.
 }
