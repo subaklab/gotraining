@@ -1,6 +1,6 @@
-## 메소드(Methods) - 메소드, 인터페이스, 임베딩(Methods, Interfaces and Embedding)
+## 메소드(Methods) - 메소드, 인터페이스 그리고 임베딩(Methods, Interfaces and Embedding)
 
-receiver를 가지고 함수를 메소드라고 한다. 따라서 이 메소드는 특정 타입과 연결된다. 이 메소드는 해당 타입의 포인터나 값에서 대해서 동작할 수 있다.
+receiver를 가지는 함수를 메소드라고 한다. 따라서 이 메소드는 특정 타입과 연결되어 해당 타입의 포인터나 값에서 대해서 동작할 수 있다.
 
 ## Notes
 

@@ -1,10 +1,10 @@
 ## Composition
 
-Composition은 단순히 타입 임베딩(type embedding)이 아니다. 디자인 패턴의 일종으로 작은 부품들로 큰 프로그램을 구성하기 위해 중요한 역할을 한다. 작은 부품은 하나의 일에 초점을 맞춘 타입의 선언과 구현에서 시작한다. composition으로 구조화된 프로그램은 변화에 적응하고 커가기 위해 더 나은 기회를 가지고 있다.
+Composition은 단순히 타입 임베딩(type embedding)이 아니다. 디자인 패턴의 일종으로 작은 부품들로 큰 프로그램을 구성하기 위해 중요한 역할을 한다. 작은 부품은 하나의 일에 초점을 맞춘 타입의 선언과 구현에서 시작한다. composition으로 구조화된 프로그램은 변화에 적응하고 규모가 커질 수 있는 기회를 제공한다.
 
 ## Note
 
-* composition으로 타입과 behavior를 선언한다.
+* Composition으로 type과 behavior를 선언한다.
 * Composition은 lego 블록으로 소프트웨어를 구성하는 것과 같다.
 * 단순히 타입 임베딩 이상의 의미가 있다.
 
@@ -24,7 +24,7 @@ http://golang.org/doc/effective_go.html#embedding
 
 **Part A** 아래 가이드를 따라 진행한다:
 
-**Part B** administrator interface를 구현하는 sysadmin 타입을 선언한다.
+**Part B** administrator interface를 구현하는 sysadmin type을 선언한다.
 
 **Part C** developer interface를 구현하는 programmer type을 선언한다.
 
