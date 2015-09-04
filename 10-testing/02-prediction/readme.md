@@ -1,6 +1,6 @@
-## Instruction Flow and Branch Predictions
+## 명령 흐름과 브랜치 예측(Instruction Flow and Branch Predictions)
 
-Understanding how the hardware works is an critical component to understanding how to write the most performant code you can. Knowing the basics of processor instruction flow and branch predictions can help you make better decisions within the scope of writing idiomatic code.
+HW가 어떻게 동작하는지 이해하는 것이 중요합니다. 왜냐하면 대부분의 성능 좋은 코드를 작성하는 방법을 이해하는 것과 같기 때문입니다. 프로세서 캐싱의 기본을 알고 있다면 관용적 표현 코드를 작성하는 범위내에서 더 나은 결정을 할 수 있기 때문입니다.
 
 ## Acknowledgment
 This content is provided by Lighterra, the software company of Jason Robert Carey Patterson. They work on a variety of software, including a cutting-edge code optimizer to make programs faster, a threading library for parallel programming, an iPhone user-interface library and a web video component.
@@ -9,15 +9,15 @@ This content is provided by Lighterra, the software company of Jason Robert Care
 
 ## Notes
 
-* Each instruction takes 4 cycles over 4 stages (Fetch, Decode, Execute, Writeback)
-* Pipelines allows these stages to happen concurrently by overlapping each stage.
-* Branching requires prediction to keep the pipleline running efficiently.
-* Barch mispredictions cause a lot of performance problems.
+* 각 명령은 4개 스테이지 상에서 4개 사이클을 가진다.(Fetch, Decode, Execute, Writebakc)
+* 파이프라인은 이 스테이지들이 각 스테이지들이 겹치도록 해서 동시에 일어나도록 한다. 
+* 브랜치는 파이프라인이 효과적으로 실행되도록 유지하기 위해 예측이 필요하다.
+* Barch의 예측착오는 많은 성능 문제를 야기한다.
 
-### Basic Instruction Flow
-Instructions are executed one after the other inside the processor, right? Well, that makes it easy to understand, but that's not really what happens. In fact, that hasn't happened since the middle of the 1980s. Instead, several instructions are all partially executing at the same time.
+### 기본 명령 흐름
+명령은 프로세서내부에서 순차적으로 하나씩 실행될까? 이렇게 이해하기 쉽지만 현실은 그렇지 않다. 사실 1980년대 중반까지 그렇지 않았다. 대신에 여러 명령들이 모두 부분적으로 동시에 실행되었다.
 
-Consider how an instruction is executed – first it is fetched, then decoded, then executed by the appropriate functional unit, and finally the result is written into place. With this scheme, a simple processor might take 4 cycles per instruction (CPI = 4)...
+명령이 어떻게 실행되는지 곰곰히 생각해보자. - 먼저 fetch하고 decode하고 난 후에 적절한 기능 유닛에서 실행하고 마지막으로 그 결과를 특정 장소에 기록한다. 이런 개념으로 단순한 프로세서는 명령당 4개 사이클을 가진다.(CPI = 4)...
 
 ![figure1](figure1.png)
 
@@ -48,7 +48,7 @@ http://www.lighterra.com/papers/modernmicroprocessors/
 
 http://archive.arstechnica.com/cpu/1q00/crusoe/m-crusoe-1.html
 
-## Code Review
+## 코드 리뷰
 
 [Tests](prediction_test.go) ([Go Playground](https://play.golang.org/p/hwZqjJNdbm))
 

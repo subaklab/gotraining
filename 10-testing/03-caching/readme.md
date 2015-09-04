@@ -9,25 +9,26 @@ HW가 어떻게 동작하는지 이해하는 것이 중요합니다. 왜냐하�
 
 ## Notes
 
-* CPU Caches works by caching memory on cache lines.
-* On our 64 bit processors, the cache line will be 64k.
-* Cache lines are moved and stored in L1, L2 and L3 caches.
-* Memory in L1 and L2 caches is also in L3 cache.
-* Both data and instructions are stored in these caches.
-* Hardware likes to traverse data and instructions linearly along cache lines.
-* Access to main memory is incredibly slow, we need the cache.
-	* Accessing one byte from main memory will cause an entire cache line to be read.
-	* Writes to one byte in a cache line requires the entire cache line to be written.
+* CPU 캐쉬는 캐쉬 라인에 캐싱된 메모리로 동작한다.
+* 64 bit 프로세서에서 캐쉬 라인은 64k가 된다.
+* 캐쉬 라인은 L1, L2 그리고 L3 캐쉬로 이동 및 저장된다.
+* L1과 L2 캐쉬에 있는 메모리는 L3 캐쉬내도 있다.
+* 데이터와 명령 모두 이 캐쉬에 저장된다.
+* HW는 선형적으로 캐쉬 라인을 따라서 데이터와 명령을 돌아다닐 확률이 높다.
+* 메인 메모리에 접근은 엄청 느리기 때문에 캐쉬가 필요하다.
+	* 메인 메모리에서 1개 바이트에 접근은 전체 캐쉬 라인을 읽어야 한다.
+	* 캐쉬 라인에 1개 바이트를 쓰기 위해서는 전체 캐쉬 라인을 필요로 한다.
 * Small = Fast
-	* Compact, well localized code that fits in cache is fastest.
-	* Compact data structures that fit in cache are fastest.
-	* Traversals touching only cached data is the fastest.
-* Predictable access patterns matter.
-	* Provide regular patterns of memory access.
-	* Hardware can make better predictions about required memory.
+	* 캐쉬에 크기가 작고 적절하게 위치한 코드가 가장 빠르다.
+	* 캐쉬에 작은 자료구조를 가지는 경우 가장 빠르다.
+	* 캐쉬된 데이터에만 접근하는 것이 가장 빠르다.
+* 예측가능한 접근 패턴이 중요하다.
+	* 일정한 메모리 접근 패턴을 제공한다.
+	* HW는 필요한 메모리에 대해 더 향상된 예측이 가능하다.
 
-### Cache Hierarchies
-This is subject to be different in different processors. For this content, the following is the multi-levels of cache associated with the Intel 4 Core i7-9xx processor:
+### 캐쉬 계층구조
+
+프로세서마다 다를 수 있다. 이 내용에 대해서는 Intel 4 Core i7-9xx 프로세서와 관련된 캐쉬의 멀티 레벨은 다음과 같다 :
 
 	L1 - 64KB Cache (Per Core)
 		32KB I-Cache
@@ -43,7 +44,7 @@ This is subject to be different in different processors. For this content, the f
 		Shared across all 4 cores
 		8 HW Threads
 
-This is a diagram of the relationship of the cache hierarchy for each core and main memory:
+이것은 각 코어와 메인 메모리에 대해서 캐쉬 계층의 관계도이다 :
 
 ![figure1](figure1.png)
 
@@ -55,7 +56,7 @@ http://www.akkadia.org/drepper/cpumemory.pdf
 
 http://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips
 
-## Code Review
+## 코드 리뷰
 
 [Caching](caching.go) ([Go Playground](http://play.golang.org/p/GQQXh3cf15))
 
