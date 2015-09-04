@@ -1,16 +1,16 @@
-## Testing and Benchmarking
+## 테스팅과 벤치마킹
 
-Testing is built right into the go tools and the standard library. Testing needs to be a vital part of the development process because it can save you a tremendous amount of time throughout the life cycle of the project. Benchmarking is also a very powerful tool tied to the testing functionality. Aspect of your code can be setup to be benchmarked for performance reviews. Profiling provides a view of the interations between functions and which functions are most heavlily used.
+테스팅은 go tools과 표준 라이브러리에 기본으로 탑재되어 있습니다. 테스팅은 개발 프로세스에서 중요한 부분입니다. 왜냐하면 프로젝트의 라이브 사이클에서 엄청난 시간을 절약해 줄 수 있기 때문입니다. 벤치마킹은 테스팅 기능에 속하는 아주 강력한 도구입니다. 성능 리뷰를 코드 측면에서 벤치마킹이 가능하다. 프로파일링은 함수 사이에서 상호작용의 관점과 어떤 함수가 가장 많이 사용되는지를 알 수 있다.
 
 ## Notes
 
-* The Go toolset has support for testing and benchmarking.
-* The tools are very flexible and give you many options.
-* Write tests in tandem with development.
-* Example code serve as both a test and documentation.
-* Benchmark throughout the dev, qa and release cycles.
-* If performance problems are observed, profile your code to see what functions to focus on.
-* The tools can interfere with each other. For example, precise memory profiling skews CPU profiles, goroutine blocking profiling affects scheduler trace, etc. Rerun tests for each needed profiling mode.
+* Go 도구는 테스팅과 벤치마킹을 지원한다.
+* 도구들은 매우 유연하고 다양한 옵션을 제공한다.
+* 개발하면서 테스트를 작성할 수 있다.
+* 예제 코드는 테스트와 다큐멘트 모두로 가능하다.
+* 벤치마킹은 개발, QA, 릴리스 사이클에서 행해진다.
+* 성능 문제가 발생하면, 코드를 프로파일해서 어떤 함수에 문제가 있는지를 볼 수 있다.
+* 도구는 서로에게 간섭할 수 있다. 예를 들면, 정확한 메모리 프로파일링은 CPU 프로파일에 영향을 미치고, goroutine blocking 프로파일링은 스케줄러 추적에 영향을 미친다. 각 필욯나 프로파일링 모드에 대해서 테스트를 재실행한다.
 
 ## Links
 

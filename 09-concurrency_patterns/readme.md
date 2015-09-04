@@ -1,5 +1,5 @@
 ## 동시성 패턴 (Concurrency Patterns)
-goroutine과 채널을 만드는데 다양한 패턴이 있다. 2가지 재밌는 패턴으로 리소스 풀링(resource pooling)과 동시성 검색(concurrent searching)이 있다.
+goroutine과 채널을 만드는데 다양한 패턴이 있다. 리소스 풀링(resource pooling)과 동시성 검색(concurrent searching)과 같이 2가지 재밌는 패턴이 있다.
 
 ## Notes
 
