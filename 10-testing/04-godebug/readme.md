@@ -1,14 +1,14 @@
 ## GODEBUG
 
-There is a special environmental variable named GODEBUG that will emit debugging information about the runtime as your program executes. You can request summary and detailed information for both the garbage collector and the scheduler. What’s great is you don't need to build your program with any special switches for it to work.
+GODEBUG라는 특별한 환경변수가 있습니다. 프로그램이 실행되면서 런타임에 대한 디버깅 정보를 표시합니다. 가비지 콜렉터와 스케쥴러에게 요약 정보와 상세 정보를 요청할 수 있습니다. 빌드할 때 별다른 스위치 없이도 이런 일이 가능하다는 것은 멋진 일입니다.
 
 ## Notes
 
-* View the internals of the runtime and scheduler.
-* Look and details about memory and goroutines.
-* Helps to determine how your concurrent program is running.
+* 런타임과 스케쥴러의 내부를 보기
+* 메모리와 goroutines에 대한 자세하게 살펴보기
+* 여러분의 동시성을 제공하는 프로그램이 어떻게 실행하고 있는지 결정하는데 도움
 
-### GODEBUG Documentation
+### GODEBUG 문서
 
 [http://golang.org/pkg/runtime/](http://golang.org/pkg/runtime/)
 
@@ -168,7 +168,7 @@ https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-i
 
 http://www.goinggo.net/2015/02/scheduler-tracing-in-go.html
 
-## Code Review
+## 코드 리뷰
 
 [Scheduler Stats](godebug.go) ([Go Playground](http://play.golang.org/p/sKLLsUa5hH))
 

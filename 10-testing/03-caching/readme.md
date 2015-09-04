@@ -1,9 +1,9 @@
-## CPU Caches
+## CPU 캐시(Caches)
 
-Understanding how the hardware works is an critical component to understanding how to write the most performant code you can. Knowing the basics of processor caching can help you make better decisions within the scope of writing idiomatic code.
+HW가 어떻게 동작하는지 이해하는 것이 중요합니다. 왜냐하면 대부분의 성능 좋은 코드를 작성하는 방법을 이해하는 것과 같기 때문입니다. 프로세서 캐싱의 기본을 알고 있다면 관용적 표현 코드를 작성하는 범위내에서 더 나은 결정을 할 수 있기 때문입니다.
 
 ## Acknowledgment
-This content is provided by Scott Meyers from his talk in 2014 at Dive:
+이 콘텐츠는 2014년 Dive에서 Scott Meyers가 한 이야기입니다 :
 
 [CPU Caches and Why You Care](https://www.youtube.com/watch?v=WDIkqP4JbkE)
 
