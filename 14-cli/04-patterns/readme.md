@@ -1,33 +1,29 @@
-## Pattern Matching
+## 패턴 매칭
 
-A fundamental convenience provided by shells is pattern matching of files.
-Let's initialize a directory with some files:
+쉘에서 제공하는 편리함 중에 하나가 바로 파일의 패턴 매칭이다. 몇 개 파일을 가지는 디렉토리를 초기화 해보자 :
 
     touch a b1 c1 01.txt 02.txt
 
-We can now match against these four files in various ways using patterns.
+패턴을 이용해서 다양한 방식으로 이 4개 파일에 대한 매칭을 할 수 있다.
 
-    # display info for all files ending in '.txt': 01.txt 02.txt
-    # the "star" will match any number of characters (including zero)
+    # '.txt'로 끝나는 파일을 출력한다 : 01.txt. 02.txt
+    # "start"는 0개 이상의 문자와 매치된다 :
     ls -l *.txt
 
-    # list all files starting with a lowercase letter: a b1 c1
-    # character classes are case-sensitive and match exactly one character
+    # 소문자로 시작하는 모든 파일을 출력한다 : a b1 c1
+    # 문자 클래스는 대소문자를 따지고 정확히 1개 문자와 매치한다
     echo [a-z]*
 
-    # list all files that do _not_ end with a number: a 01.txt 02.txt
+    # 숫자로 끝나지 않는 모든 파일을 출력한다 : a 01.txt 02.txt
     echo *[!0-9]
 
-    # remove all files with names consisting of two characters: b1 c1
-    # question marks match exactly one character each
+    # 파일 이름이 2개 문자로 구성된 모든 파일을 삭제한다 : b1 c1
+    # 각 물음표는 정확히 하나의 문자와 매치된다
     rm ??
 
-Pattern matching is the default behavior. To instead specify an argument or
-filename containing a wildcard character or whitespace, it can be wrapped in
-either single or double quotes, or the special character can be escaped with a
-backslash, for example:
+패턴 매칭은 기본 동작이다. 와일드 문자나 공백을 포함하는 인자나 파일이름을 지정하기 위해서는 따옴표나 쌍따옴표를 이용할 수 있다. 특수문자의 경우 백슬래쉬를 사용할 수 있다. 예제는 아래와 같다 :
 
-	# create two new files
+	# 새로운 2개 파일 생성
 	touch filename\ with\ spaces "more spaces"
 
 ___

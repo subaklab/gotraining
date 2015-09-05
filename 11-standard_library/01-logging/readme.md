@@ -1,27 +1,27 @@
-## Logging - Standard Library
+## 로깅 - 표준 라이브러리
 
-Logging is an important part of every program. Logs are our eyes and history to what is happening inside the program as it runs. The standard library provides the log package to support the basic features of logging and the ability for you to extend and customize logging to fit your needs.
+로깅은 모든 프로그램에서 중요한 부분입니다. 로그는 프로그램이 실행되는 내부에서 어떤 일이 일어났는지와 같은 역사를 눈으로 확인하는 것입니다. 표준 라이브러리는 로깅의 기본 특징을 지원하기 위해서 로그 패키지와 여러분의 필요에 따라서 지정한 방식데로 확장할 수 있는 기능을 제공합니다.
 
 ## Notes
 
-* Support for logging is already built into the standard library.
-* The log package can be easily extended to meet your logging needs.
+* 로깅 지원은 표준 라이브러리에 포함되어 있다.
+* 로그 패키지는 쉽게 로깅에 대한 니즈를 만족시킬 수 있도록 확장이 가능하다. 
 
 ## Links
 
 http://www.goinggo.net/2013/11/using-log-package-in-go.html
 
-## Code Review
+## 코드 리뷰
 
 [Use of log package](example1/example1.go) ([Go Playground](http://play.golang.org/p/xO5OuPOJef))
 
 [Customizing your own log](example2/example2.go) ([Go Playground](http://play.golang.org/p/008KxiH7Yj))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 문제 1
 
-Setup a new program to use the log package. Set the Prefix to your first name and on each log line show the date and long path for the code file.
+로그 패키지를 사용하기 위해 새로운 프로그램을 만들자. 여러분의 이름으로 prefix로 정하고 각 로그 라인에 날짜와 코드 파일에 대한 경로를 보여주도록 한다.
 
 [Template](exercises/template1/template1.go) ([Go Playground](http://play.golang.org/p/9eVWni05Ma)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](http://play.golang.org/p/1-l_QmaSvy))

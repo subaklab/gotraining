@@ -1,15 +1,11 @@
-## Text Streams, Redirection, and Pipelining
+## 텍스트 스트림, 리다이렉션, 파이프라이닝(Text Streams, Redirection, and Pipelining)
 
-Every process has its own set of three text streams, collectively known as the
-stdio streams: stdin, stdout, and stderr. Programs can be chained together
-through a process known as *pipelining*, with the stdout of one process
-corresponding to the stdin of the next, and so on. Syntactically, each pair of
-commands in a pipeline is separated by a "pipe" character, as shown below:
+모든 프로세스는 자신의 3개 텍스트 스트림 집합을 가지고 있다. stdio 스트림으로 알려진 : stdin, stdout 그리고 stderr이다. 프로그램은 *pipelining*이라고 알고 있는 하나의 프로세스를 통해 함께 체인으로 연결될 수 있다. 하나의 프로세스의 stdout은 다음 프로세스의 stdin이 되는 것과 같다. 파이프라인에서 각 명령쌍은 "pipe" 문자로 구분되며 아래와 같다 :
 
-    # count number of files the current directory
+    # 현재 디렉토리에 있는 파일의 개수를 카운트한다
     ls | wc -l
 
-    # list first 10 error lines in a compressed log file
+    # 압축된 log 파일에서 처음 10개 error 라인을 출력한다
     zcat log.gz | grep -i error | head
 
 Stdio streams can also redirected from or to files. The following two examples
