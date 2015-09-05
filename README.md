@@ -6,6 +6,23 @@ Go는 오픈소스 프로그래밍 언어로 빌드가 단순하고 효율적인
 
 하드코어 Go는 3일 집중 과정으로 Go 프로그래밍의 이해를 높이고 관용적인 사용법을 배우게 됩니다. 이 과정에서는 언어의 문법, OOP, 동시성(concurrency), 채널(channel), 테스팅, 디버깅등과 같이 구체적이며 구현 레벨까지 다룹니다.  Go의 내부 동작을 더 잘 이해하기를 원하거나 이제 막 Go를 시작한 개발자라면 도움을 얻을 수 있습니다.
 
+## 로드맵
+
+ * 언어 문법 (Language Syntax)
+ * 배열, 슬라이스 그리고 맵(Arrays, Slices and Maps)
+ * 메소드, 인터페이스, 그리고 임베딩(Methods, Interfaces and Embedding)
+ * 패키징과 익스포팅(Packaging and Exporting)
+ * 포인터 사용하기(Using Pointers)
+ * 컴포지션(Composition)
+ * 에러처리(Error Handling)
+ * 동시성, 경쟁 상태, 채널(Concurrency, Race Conditions and Channels)
+ * 동시성 패턴(Concurrency Patterns)
+ * 테스팅과 디버깅(Testing and Debugging)
+ * 표준 라이브러리(Standard Library)
+ * 리플렉션(Reflection)
+ * HTTP
+ 
+
 ## 수강 최소 자격
 
 이 자료는 실습 환경에서 학습 용도로 작성되었습니다. 코드는 코멘트를 잘 달아놨지만 일부 빠진 부분은 수업에서 다룰 예정입니다. 다음과 같은 배경지식이 있는 수강자에게 적합한 교육입니다.
