@@ -85,7 +85,7 @@ Go 워크샵을 개최하는데 관심이 있는 분은 연락주세요.
 
 [Chicago, IL : September TDB](https://www.eventbrite.com/e/go-programming-bootcamp-tour-chicago-september-exact-dates-tbd-tickets-15559453745)
 
-[Seoul, Korea : September 12th]
+[Seoul, Korea : September 19th]
 
 **Conferences:**  
 [MagmaConf : June 16th](http://magmaconf.com/)  
@@ -110,7 +110,8 @@ _subak.io에서 HW와 SW를 개발한다. LG전자 등에서 HW개발자와 SW�
 ## Contact Information
 
 신제용(Jeyong Shin)
-Seoul & Shenzhen
+Subak.io
+Seoul
 jeyong@subak.io
 
 ___
