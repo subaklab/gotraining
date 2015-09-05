@@ -8,6 +8,7 @@
     # 압축된 log 파일에서 처음 10개 error 라인을 출력한다
     zcat log.gz | grep -i error | head
 
+Stdio 스트림은 파일로 리다이렉트될 수 있다. 아래 2가지 예제를 따라가보자: 
 Stdio streams can also redirected from or to files. The following two examples
 are equivalent: they both lexicographically sort lines from infile, filter out
 duplicates, and then write the result to outfile.
